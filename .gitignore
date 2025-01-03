@@ -1,0 +1,12 @@
+node_modules/**
+.*
+!.gitignore
+fflate.min.js
+fzstd.min.js
+pdf.worker.min.mjs
+pdf.min.mjs
+site.txt
+pdf_viewer.min.css
+FileSaver.min.js
+*.backup
+*~

@@ -1,0 +1,34 @@
+
+---
+header-includes:
+- |
+  ```{=latex}
+  \newcommand\twodigits[1]{%
+   \ifnum#1<10 0#1\else #1\fi
+  }
+  \pagestyle{plain}
+  \usepackage{datetime}
+  \newdateformat{monthdayyeardate}{%
+  \THEYEAR-\twodigits{\THEMONTH}-\twodigits{\THEDAY}}
+  \usepackage{fontspec}
+  \setmainfont{Arial}
+  \renewcommand{\abstractname}{\normalsize Overview}
+  ```
+title: A Flow Visualization Practionary
+author: Scott H., System Analyst 
+keywords: [knowledge graphs, system design, material flow, data flow, supply chain,human cognition]
+toc: false
+date: \monthdayyeardate\today
+link-citations: true
+documentclass: article
+fontsize: 12pt
+codeBlockCaptions: true
+linkcolor: blue
+abstract:   \normalsize \noindent   I show how to document systems using data and material flow.  I guide the reader through all of the steps needed to build a system that can create the documentation.  
+bibliography: assets/My Library.bib
+geometry:
+- top=.5in
+- bottom=.5in
+- left=.5in
+- right=.5in
+---
