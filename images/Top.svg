@@ -1,200 +1,254 @@
-<svg width="490pt" height="363pt" viewBox="0.00 0.00 490.06 363.40" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 359.4)">
-<polygon fill="white" stroke="none" points="-4,4 -4,-359.4 486.06,-359.4 486.06,4 -4,4"></polygon>
-<!-- Farmland -->
-<g id="s3x" class="node locations">
-<title>Farmland</title>
-<polygon fill="none" stroke="#cc3311" stroke-width="2" points="0,-88.27 0,-124.27 105.83,-124.27 105.83,-88.27 0,-88.27"></polygon>
-<text text-anchor="middle" x="16.15" y="-102.07" font-family="Arial" font-size="14.00">R2</text>
-<polyline fill="none" stroke="#cc3311" stroke-width="2" points="32.3,-88.27 32.3,-124.27"></polyline>
-<text text-anchor="middle" x="69.06" y="-102.07" font-family="Arial" font-size="14.00">Farmland</text>
+<svg width="530pt" height="377pt" viewBox="0.00 0.00 529.90 377.12" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" transform="translate(158,33) scale(1)">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 373.12)">
+<polygon fill="white" stroke="none" points="-4,4 -4,-373.12 525.9,-373.12 525.9,4 -4,4"></polygon>
+<!-- K&#45;T DB -->
+<g id="p4g" class="node datastores">
+<title>K-T DB</title>
+<polygon fill="none" stroke="#cc3311" stroke-width="2" points="13.28,-48.3 13.28,-84.3 82.53,-84.3 82.53,-48.3 13.28,-48.3"></polygon>
+<text text-anchor="middle" x="29.43" y="-62.1" font-family="Arial" font-size="14.00">R2</text>
+<polyline fill="none" stroke="#cc3311" stroke-width="2" points="45.58,-48.3 45.58,-84.3" stroke-dasharray="3,3"></polyline>
+<text text-anchor="middle" x="64.05" y="-70.5" font-family="Arial" font-size="14.00">K-T</text>
+<text text-anchor="middle" x="64.05" y="-53.7" font-family="Arial" font-size="14.00">DB</text>
 </g>
-<!-- Public -->
-<g id="s6f" class="node locations">
-<title>Public</title>
-<polygon fill="none" stroke="#cc3311" stroke-width="2" points="333.55,-54.87 333.55,-90.87 418.38,-90.87 418.38,-54.87 333.55,-54.87"></polygon>
-<text text-anchor="middle" x="349.7" y="-68.67" font-family="Arial" font-size="14.00">R3</text>
-<polyline fill="none" stroke="#cc3311" stroke-width="2" points="365.85,-54.87 365.85,-90.87"></polyline>
-<text text-anchor="middle" x="392.11" y="-68.67" font-family="Arial" font-size="14.00">Public</text>
-</g>
-<!-- Generation -->
-<g id="qza" class="node locations">
-<title>Generation</title>
-<polygon fill="none" stroke="#cc3311" stroke-width="2" points="127.44,-0.5 127.44,-36.5 243.41,-36.5 243.41,-0.5 127.44,-0.5"></polygon>
-<text text-anchor="middle" x="143.59" y="-14.3" font-family="Arial" font-size="14.00">R4</text>
-<polyline fill="none" stroke="#cc3311" stroke-width="2" points="159.74,-0.5 159.74,-36.5"></polyline>
-<text text-anchor="middle" x="201.57" y="-14.3" font-family="Arial" font-size="14.00">Generation</text>
-</g>
-<!-- Stores -->
-<g id="yyc" class="node locations">
-<title>Stores</title>
-<polygon fill="none" stroke="#cc3311" stroke-width="2" points="47.5,-221.84 47.5,-257.84 134.66,-257.84 134.66,-221.84 47.5,-221.84"></polygon>
-<text text-anchor="middle" x="63.65" y="-235.64" font-family="Arial" font-size="14.00">R5</text>
-<polyline fill="none" stroke="#cc3311" stroke-width="2" points="79.8,-221.84 79.8,-257.84"></polyline>
-<text text-anchor="middle" x="107.23" y="-235.64" font-family="Arial" font-size="14.00">Stores</text>
-</g>
-<!-- Supplies -->
-<g id="b41" class="node locations">
-<title>Supplies</title>
-<polygon fill="none" stroke="#cc3311" stroke-width="2" points="294.6,-288.96 294.6,-324.96 395,-324.96 395,-288.96 294.6,-288.96"></polygon>
-<text text-anchor="middle" x="310.75" y="-302.76" font-family="Arial" font-size="14.00">R6</text>
-<polyline fill="none" stroke="#cc3311" stroke-width="2" points="326.9,-288.96 326.9,-324.96"></polyline>
-<text text-anchor="middle" x="360.95" y="-302.76" font-family="Arial" font-size="14.00">Supplies</text>
-</g>
-<!-- Dams -->
-<g id="nkp" class="node locations">
-<title>Dams</title>
-<polygon fill="none" stroke="#cc3311" stroke-width="2" points="159.77,-318.9 159.77,-354.9 243.02,-354.9 243.02,-318.9 159.77,-318.9"></polygon>
-<text text-anchor="middle" x="175.91" y="-332.7" font-family="Arial" font-size="14.00">R7</text>
-<polyline fill="none" stroke="#cc3311" stroke-width="2" points="192.06,-318.9 192.06,-354.9"></polyline>
-<text text-anchor="middle" x="217.54" y="-332.7" font-family="Arial" font-size="14.00">Dams</text>
-</g>
-<!-- Hospitals -->
-<g id="l9y" class="node locations">
-<title>Hospitals</title>
-<polygon fill="none" stroke="#cc3311" stroke-width="2" points="377.78,-211.05 377.78,-247.05 482.06,-247.05 482.06,-211.05 377.78,-211.05"></polygon>
-<text text-anchor="middle" x="393.93" y="-224.85" font-family="Arial" font-size="14.00">R8</text>
-<polyline fill="none" stroke="#cc3311" stroke-width="2" points="410.08,-211.05 410.08,-247.05"></polyline>
-<text text-anchor="middle" x="446.07" y="-224.85" font-family="Arial" font-size="14.00">Hospitals</text>
-</g>
-<!-- Security -->
-<g id="hfx" class="node transforms zoomnotable">
-<title>Security</title>
-<path fill="none" stroke="#33bbee" stroke-width="2" d="M287.62,-106.69C287.62,-106.69 246.64,-106.69 246.64,-106.69 240.64,-106.69 234.64,-100.69 234.64,-94.69 234.64,-94.69 234.64,-82.69 234.64,-82.69 234.64,-76.69 240.64,-70.69 246.64,-70.69 246.64,-70.69 287.62,-70.69 287.62,-70.69 293.62,-70.69 299.62,-76.69 299.62,-82.69 299.62,-82.69 299.62,-94.69 299.62,-94.69 299.62,-100.69 293.62,-106.69 287.62,-106.69"></path>
-<text text-anchor="middle" x="267.13" y="-92.89" font-family="Arial" font-size="14.00">0.3</text>
-<text text-anchor="middle" x="267.13" y="-76.09" font-family="Arial" font-size="14.00">Security</text>
-<line x1="234.63999938964844" y1="-89.69000244140625" x2="299.6199951171875" y2="-89.69000244140625" stroke-dasharray="3,0" stroke="#33bbee" stroke-width="2px"></line></g>
-<!-- Shelter -->
-<g id="ts5" class="node transforms zoomnotable">
-<title>Shelter</title>
-<path fill="none" stroke="#33bbee" stroke-width="2" d="M346.21,-153.1C346.21,-153.1 311.45,-153.1 311.45,-153.1 305.45,-153.1 299.45,-147.1 299.45,-141.1 299.45,-141.1 299.45,-129.1 299.45,-129.1 299.45,-123.1 305.45,-117.1 311.45,-117.1 311.45,-117.1 346.21,-117.1 346.21,-117.1 352.21,-117.1 358.21,-123.1 358.21,-129.1 358.21,-129.1 358.21,-141.1 358.21,-141.1 358.21,-147.1 352.21,-153.1 346.21,-153.1"></path>
-<text text-anchor="middle" x="328.83" y="-139.3" font-family="Arial" font-size="14.00">0.4</text>
-<text text-anchor="middle" x="328.83" y="-122.5" font-family="Arial" font-size="14.00">Shelter</text>
-<line x1="299.45001220703125" y1="-136.10000610351562" x2="358.2099914550781" y2="-136.10000610351562" stroke-dasharray="3,0" stroke="#33bbee" stroke-width="2px"></line></g>
-<!-- Shelter&#45;&gt;Public -->
-<g id="edge6" class="edge">
-<title>Shelter-&gt;Public</title>
-<path fill="none" stroke="#bbbbbb" stroke-width="2" d="M347.3,-110.72C352.13,-104.34 357.27,-97.56 361.83,-91.53"></path>
-<polygon fill="#bbbbbb" stroke="#bbbbbb" stroke-width="2" points="344.44,-114.49 345.67,-109.15 344.08,-114.14 347.06,-110.2 347.46,-110.5 347.86,-110.81 344.88,-114.74 349.25,-111.86 344.44,-114.49"></polygon>
-</g>
-<!-- Food -->
-<g id="vp3" class="node transforms zoomable">
-<title>Food</title>
-<g id="a_vp3"><a xlink:href="#Top.Food" xlink:title="0.2
-Food">
-<path fill="none" stroke="#33bbee" stroke-width="2" d="M171.54,-204.71C171.54,-204.71 141.54,-204.71 141.54,-204.71 135.54,-204.71 129.54,-198.71 129.54,-192.71 129.54,-192.71 129.54,-180.71 129.54,-180.71 129.54,-174.71 135.54,-168.71 141.54,-168.71 141.54,-168.71 171.54,-168.71 171.54,-168.71 177.54,-168.71 183.54,-174.71 183.54,-180.71 183.54,-180.71 183.54,-192.71 183.54,-192.71 183.54,-198.71 177.54,-204.71 171.54,-204.71"></path>
-<text text-anchor="middle" x="156.54" y="-190.91" font-family="Arial" font-size="14.00">0.2</text>
-<text text-anchor="middle" x="156.54" y="-174.11" font-family="Arial" font-size="14.00">Food</text>
+<!-- KorTalos -->
+<g id="jn8" class="node processes zoomable notenotattached">
+<title>KorTalos</title>
+<g id="a_jn8"><a xlink:href="#Top.KorTalos" xlink:title="KorTalos
+">
+<path fill="none" stroke="#33bbee" stroke-width="2" d="M224.01,-112.57C224.01,-112.57 177.59,-112.57 177.59,-112.57 171.59,-112.57 165.59,-106.57 165.59,-100.57 165.59,-100.57 165.59,-88.57 165.59,-88.57 165.59,-82.57 171.59,-76.57 177.59,-76.57 177.59,-76.57 224.01,-76.57 224.01,-76.57 230.01,-76.57 236.01,-82.57 236.01,-88.57 236.01,-88.57 236.01,-100.57 236.01,-100.57 236.01,-106.57 230.01,-112.57 224.01,-112.57"></path>
+<text text-anchor="middle" x="200.8" y="-98.77" font-family="Arial" font-size="14.00">0.3</text>
+<text text-anchor="middle" x="200.8" y="-81.97" font-family="Arial" font-size="14.00">KorTalos</text>
 </a>
 </g>
-<line x1="129.5399932861328" y1="-187.7100067138672" x2="183.5399932861328" y2="-187.7100067138672" stroke-dasharray="3,0" stroke="#33bbee" stroke-width="2px"></line><circle cx="130.5399932861328" cy="-203.7100067138672" r="3" stroke="#ee3377" fill="#ee3377"></circle></g>
-<!-- Food&#45;&gt;Farmland -->
-<g id="edge4" class="edge">
-<title>Food-&gt;Farmland</title>
-<path fill="none" stroke="#bbbbbb" stroke-width="2" d="M126.61,-163.47C112.84,-152.79 96.55,-140.14 82.79,-129.46"></path>
-<polygon fill="#bbbbbb" stroke="#bbbbbb" stroke-width="2" points="130.32,-166.35 124.99,-165.07 129.97,-166.71 126.07,-163.68 126.37,-163.29 126.68,-162.89 130.58,-165.92 127.75,-161.51 130.32,-166.35"></polygon>
-<polygon fill="#bbbbbb" stroke="#bbbbbb" stroke-width="2" points="78.98,-126.5 84.31,-127.79 79.34,-126.15 83.24,-129.17 82.93,-129.57 82.63,-129.96 78.73,-126.94 81.55,-131.35 78.98,-126.5"></polygon>
-</g>
-<!-- Food&#45;&gt;Stores -->
-<g id="edge5" class="edge">
-<title>Food-&gt;Stores</title>
-<path fill="none" stroke="#bbbbbb" stroke-width="2" d="M133.28,-205.59C128.94,-209.11 124.35,-212.84 119.87,-216.48"></path>
-<polygon fill="#bbbbbb" stroke="#bbbbbb" stroke-width="2" points="116.16,-219.49 118.63,-214.59 115.9,-219.06 119.73,-215.95 120.04,-216.33 120.36,-216.72 116.53,-219.83 121.46,-218.08 116.16,-219.49"></polygon>
-</g>
-<!-- Energy -->
-<g id="p61" class="node transforms zoomnotable">
-<title>Energy</title>
-<path fill="none" stroke="#33bbee" stroke-width="2" d="M205.84,-115.39C205.84,-115.39 171.08,-115.39 171.08,-115.39 165.08,-115.39 159.08,-109.39 159.08,-103.39 159.08,-103.39 159.08,-91.39 159.08,-91.39 159.08,-85.39 165.08,-79.39 171.08,-79.39 171.08,-79.39 205.84,-79.39 205.84,-79.39 211.84,-79.39 217.84,-85.39 217.84,-91.39 217.84,-91.39 217.84,-103.39 217.84,-103.39 217.84,-109.39 211.84,-115.39 205.84,-115.39"></path>
-<text text-anchor="middle" x="188.46" y="-101.59" font-family="Arial" font-size="14.00">0.5</text>
-<text text-anchor="middle" x="188.46" y="-84.79" font-family="Arial" font-size="14.00">Energy</text>
-<line x1="159.0800018310547" y1="-98.38999938964844" x2="217.83999633789062" y2="-98.38999938964844" stroke-dasharray="3,0" stroke="#33bbee" stroke-width="2px"></line></g>
-<!-- Energy&#45;&gt;Generation -->
-<g id="edge7" class="edge">
-<title>Energy-&gt;Generation</title>
-<path fill="none" stroke="#bbbbbb" stroke-width="2" d="M187.46,-71.31C187.03,-60.21 186.54,-47.5 186.15,-37.34"></path>
-<polygon fill="#bbbbbb" stroke="#bbbbbb" stroke-width="2" points="187.65,-76.26 185.21,-71.35 187.15,-76.22 186.96,-71.28 187.46,-71.26 187.96,-71.24 188.15,-76.18 189.7,-71.18 187.65,-76.26"></polygon>
-</g>
-<!-- Water -->
-<g id="azi" class="node transforms zoomnotable">
-<title>Water</title>
-<path fill="none" stroke="#33bbee" stroke-width="2" d="M236.72,-275.55C236.72,-275.55 206.72,-275.55 206.72,-275.55 200.72,-275.55 194.72,-269.55 194.72,-263.55 194.72,-263.55 194.72,-251.55 194.72,-251.55 194.72,-245.55 200.72,-239.55 206.72,-239.55 206.72,-239.55 236.72,-239.55 236.72,-239.55 242.72,-239.55 248.72,-245.55 248.72,-251.55 248.72,-251.55 248.72,-263.55 248.72,-263.55 248.72,-269.55 242.72,-275.55 236.72,-275.55"></path>
-<text text-anchor="middle" x="221.72" y="-261.75" font-family="Arial" font-size="14.00">0.6</text>
-<text text-anchor="middle" x="221.72" y="-244.95" font-family="Arial" font-size="14.00">Water</text>
-<line x1="194.72000122070312" y1="-258.54998779296875" x2="248.72000122070312" y2="-258.54998779296875" stroke-dasharray="3,0" stroke="#33bbee" stroke-width="2px"></line></g>
-<!-- Water&#45;&gt;Dams -->
-<g id="edge3" class="edge">
-<title>Water-&gt;Dams</title>
-<path fill="none" stroke="#bbbbbb" stroke-width="2" d="M215.08,-283.46C212.2,-294.7 208.89,-307.63 206.25,-317.96"></path>
-<polygon fill="#bbbbbb" stroke="#bbbbbb" stroke-width="2" points="216.3,-278.72 217.24,-284.12 216.76,-278.9 215.54,-283.68 215.06,-283.56 214.57,-283.44 215.8,-278.65 212.88,-283 216.3,-278.72"></polygon>
-</g>
-<!-- Medical -->
-<g id="atf" class="node transforms zoomnotable">
-<title>Medical</title>
-<path fill="none" stroke="#33bbee" stroke-width="2" d="M332.53,-247.03C332.53,-247.03 293.89,-247.03 293.89,-247.03 287.89,-247.03 281.89,-241.03 281.89,-235.03 281.89,-235.03 281.89,-223.03 281.89,-223.03 281.89,-217.03 287.89,-211.03 293.89,-211.03 293.89,-211.03 332.53,-211.03 332.53,-211.03 338.53,-211.03 344.53,-217.03 344.53,-223.03 344.53,-223.03 344.53,-235.03 344.53,-235.03 344.53,-241.03 338.53,-247.03 332.53,-247.03"></path>
-<text text-anchor="middle" x="313.21" y="-233.23" font-family="Arial" font-size="14.00">0.7</text>
-<text text-anchor="middle" x="313.21" y="-216.43" font-family="Arial" font-size="14.00">Medical</text>
-<line x1="281.8900146484375" y1="-230.02999877929688" x2="344.5299987792969" y2="-230.02999877929688" stroke-dasharray="3,0" stroke="#33bbee" stroke-width="2px"></line></g>
-<!-- Medical&#45;&gt;Supplies -->
+<line x1="165.58999633789062" y1="-95.56999969482422" x2="236.00999450683594" y2="-95.56999969482422" stroke-dasharray="3,3" stroke="#33bbee" stroke-width="2px"></line><circle cx="166.58999633789062" cy="-111.56999969482422" r="3" stroke="#ee3377" fill="#ee3377"></circle></g>
+<!-- KorTalos&#45;&gt;K&#45;T DB -->
 <g id="edge2" class="edge">
-<title>Medical-&gt;Supplies</title>
-<path fill="none" stroke="#bbbbbb" stroke-width="2" d="M323.64,-254.76C327.08,-263.23 330.9,-272.65 334.33,-281.13"></path>
-<polygon fill="#bbbbbb" stroke="#bbbbbb" stroke-width="2" points="321.77,-250.15 325.74,-253.94 322.26,-250.02 324.12,-254.6 323.65,-254.79 323.19,-254.97 321.33,-250.4 321.57,-255.63 321.77,-250.15"></polygon>
-<polygon fill="#bbbbbb" stroke="#bbbbbb" stroke-width="2" points="336.2,-285.74 332.24,-281.95 335.71,-285.87 333.86,-281.29 334.32,-281.1 334.78,-280.92 336.64,-285.49 336.41,-280.26 336.2,-285.74"></polygon>
-</g>
-<!-- Medical&#45;&gt;Hospitals -->
-<g id="edge1" class="edge">
-<title>Medical-&gt;Hospitals</title>
-<path fill="none" stroke="#bbbbbb" stroke-width="2" d="M352.52,-229.04C358.1,-229.04 363.93,-229.04 369.79,-229.04"></path>
-<polygon fill="#bbbbbb" stroke="#bbbbbb" stroke-width="2" points="347.85,-229.04 352.85,-226.79 347.91,-228.54 352.85,-228.54 352.85,-229.04 352.85,-229.54 347.91,-229.54 352.85,-231.29 347.85,-229.04"></polygon>
-<polygon fill="#bbbbbb" stroke="#bbbbbb" stroke-width="2" points="374.77,-229.04 369.77,-231.29 374.71,-229.54 369.77,-229.54 369.77,-229.04 369.77,-228.54 374.71,-228.54 369.77,-226.79 374.77,-229.04"></polygon>
+<title>KorTalos-&gt;K-T DB</title>
+<path fill="none" stroke="#bbbbbb" stroke-width="2" d="M157.86,-86.63C136.88,-82.75 111.71,-78.1 90.75,-74.22"></path>
+<polygon fill="#bbbbbb" stroke="#bbbbbb" stroke-width="2" points="162.56,-87.5 157.23,-88.8 162.4,-87.98 157.55,-87.08 157.64,-86.59 157.73,-86.1 162.58,-87 158.05,-84.38 162.56,-87.5"></polygon>
+<polygon fill="#bbbbbb" stroke="#bbbbbb" stroke-width="2" points="85.92,-73.33 91.25,-72.03 86.07,-72.85 90.93,-73.75 90.84,-74.24 90.75,-74.73 85.89,-73.83 90.43,-76.45 85.92,-73.33"></polygon>
 </g>
 <!-- Govern -->
-<g id="bbu" class="node agents">
+<g id="g9b" class="node agents">
 <title>Govern</title>
-<polygon fill="none" stroke="#009988" stroke-width="2" points="272.81,-196.89 212.5,-196.89 212.5,-160.89 272.81,-160.89 272.81,-196.89"></polygon>
-<text text-anchor="middle" x="242.65" y="-174.69" font-family="Arial" font-size="14.00">Govern</text>
+<polygon fill="none" stroke="#009988" stroke-width="2" points="282.85,-189.04 222.54,-189.04 222.54,-153.04 282.85,-153.04 282.85,-189.04"></polygon>
+<text text-anchor="middle" x="252.69" y="-166.84" font-family="Arial" font-size="14.00">Govern</text>
 </g>
+<!-- KorTalos&#45;&gt;Govern -->
+<g id="edge1" class="edge">
+<title>KorTalos-&gt;Govern</title>
+<path fill="none" stroke="#bbbbbb" stroke-width="2" d="M217.72,-119.5C223.56,-128.11 230.1,-137.74 235.93,-146.33"></path>
+<polygon fill="#bbbbbb" stroke="#bbbbbb" stroke-width="2" points="214.99,-115.49 219.66,-118.36 215.44,-115.26 218.22,-119.34 217.8,-119.63 217.39,-119.91 214.62,-115.82 215.94,-120.89 214.99,-115.49"></polygon>
+<polygon fill="#bbbbbb" stroke="#bbbbbb" stroke-width="2" points="238.46,-150.07 233.79,-147.2 238.01,-150.3 235.24,-146.22 235.65,-145.94 236.07,-145.65 238.84,-149.74 237.52,-144.67 238.46,-150.07"></polygon>
+</g>
+<!-- Security -->
+<g id="pwe" class="node transforms zoomnotable notenotattached">
+<title>Security</title>
+<g id="a_pwe"><a xlink:title="Security
+">
+<path fill="none" stroke="#33bbee" stroke-width="2" d="M296.75,-59.01C296.75,-59.01 255.77,-59.01 255.77,-59.01 249.77,-59.01 243.77,-53.01 243.77,-47.01 243.77,-47.01 243.77,-35.01 243.77,-35.01 243.77,-29.01 249.77,-23.01 255.77,-23.01 255.77,-23.01 296.75,-23.01 296.75,-23.01 302.75,-23.01 308.75,-29.01 308.75,-35.01 308.75,-35.01 308.75,-47.01 308.75,-47.01 308.75,-53.01 302.75,-59.01 296.75,-59.01"></path>
+<text text-anchor="middle" x="276.26" y="-45.21" font-family="Arial" font-size="14.00">0.4</text>
+<text text-anchor="middle" x="276.26" y="-28.41" font-family="Arial" font-size="14.00">Security</text>
+</a>
+</g>
+<line x1="243.77000427246094" y1="-42.0099983215332" x2="308.75" y2="-42.0099983215332" stroke-dasharray="3,0" stroke="#33bbee" stroke-width="2px"></line></g>
 <!-- Govern&#45;&gt;Security -->
-<g id="edge8" class="edge">
-<title>Govern-&gt;Security</title>
-<path fill="none" stroke="#bbbbbb" stroke-width="2" d="M249.58,-153.38C252.87,-141.23 256.81,-126.73 260.12,-114.54"></path>
-<polygon fill="#bbbbbb" stroke="#bbbbbb" stroke-width="2" points="248.36,-157.85 247.5,-152.44 247.9,-157.66 249.19,-152.9 249.67,-153.03 250.15,-153.16 248.86,-157.92 251.84,-153.62 248.36,-157.85"></polygon>
-<polygon fill="#bbbbbb" stroke="#bbbbbb" stroke-width="2" points="261.34,-110.02 262.2,-115.43 261.81,-110.21 260.52,-114.97 260.03,-114.84 259.55,-114.71 260.84,-109.95 257.86,-114.25 261.34,-110.02"></polygon>
-</g>
-<!-- Govern&#45;&gt;Shelter -->
-<g id="edge9" class="edge">
-<title>Govern-&gt;Shelter</title>
-<path fill="none" stroke="#bbbbbb" stroke-width="2" d="M280.32,-159.75C284.25,-157.76 288.23,-155.73 292.14,-153.75"></path>
-<polygon fill="#bbbbbb" stroke="#bbbbbb" stroke-width="2" points="275.94,-161.98 279.37,-157.71 275.77,-161.51 280.17,-159.27 280.39,-159.72 280.62,-160.16 276.22,-162.4 281.41,-161.72 275.94,-161.98"></polygon>
-<polygon fill="#bbbbbb" stroke="#bbbbbb" stroke-width="2" points="296.45,-151.55 293.02,-155.82 296.62,-152.03 292.22,-154.26 292,-153.82 291.77,-153.37 296.17,-151.14 290.98,-151.81 296.45,-151.55"></polygon>
-</g>
-<!-- Govern&#45;&gt;Food -->
 <g id="edge10" class="edge">
-<title>Govern-&gt;Food</title>
-<path fill="none" stroke="#bbbbbb" stroke-width="2" d="M204.38,-182.37C200.18,-182.75 195.93,-183.13 191.78,-183.51"></path>
-<polygon fill="#bbbbbb" stroke="#bbbbbb" stroke-width="2" points="209.14,-181.94 204.36,-184.63 209.12,-182.44 204.2,-182.89 204.16,-182.39 204.11,-181.89 209.03,-181.44 203.96,-180.15 209.14,-181.94"></polygon>
-<polygon fill="#bbbbbb" stroke="#bbbbbb" stroke-width="2" points="186.87,-183.96 191.64,-181.26 186.89,-183.45 191.8,-183.01 191.85,-183.5 191.89,-184 186.98,-184.45 192.05,-185.74 186.87,-183.96"></polygon>
+<title>Govern-&gt;Security</title>
+<path fill="none" stroke="#bbbbbb" stroke-width="2" d="M257.4,-145.07C261.49,-122.48 267.4,-89.89 271.51,-67.22"></path>
+<polygon fill="#bbbbbb" stroke="#bbbbbb" stroke-width="2" points="256.55,-149.73 255.23,-144.41 256.07,-149.58 256.95,-144.73 257.44,-144.81 257.94,-144.9 257.06,-149.76 259.66,-145.22 256.55,-149.73"></polygon>
+<polygon fill="#bbbbbb" stroke="#bbbbbb" stroke-width="2" points="272.39,-62.34 273.72,-67.66 272.87,-62.49 271.99,-67.35 271.5,-67.26 271.01,-67.17 271.89,-62.31 269.29,-66.86 272.39,-62.34"></polygon>
 </g>
-<!-- Govern&#45;&gt;Energy -->
+<!-- Shelter -->
+<g id="o8n" class="node transforms zoomnotable notenotattached">
+<title>Shelter</title>
+<g id="a_o8n"><a xlink:title="Shelter
+">
+<path fill="none" stroke="#33bbee" stroke-width="2" d="M269.16,-294.84C269.16,-294.84 234.4,-294.84 234.4,-294.84 228.4,-294.84 222.4,-288.84 222.4,-282.84 222.4,-282.84 222.4,-270.84 222.4,-270.84 222.4,-264.84 228.4,-258.84 234.4,-258.84 234.4,-258.84 269.16,-258.84 269.16,-258.84 275.16,-258.84 281.16,-264.84 281.16,-270.84 281.16,-270.84 281.16,-282.84 281.16,-282.84 281.16,-288.84 275.16,-294.84 269.16,-294.84"></path>
+<text text-anchor="middle" x="251.78" y="-281.04" font-family="Arial" font-size="14.00">0.5</text>
+<text text-anchor="middle" x="251.78" y="-264.24" font-family="Arial" font-size="14.00">Shelter</text>
+</a>
+</g>
+<line x1="222.39999389648438" y1="-277.8399963378906" x2="281.1600036621094" y2="-277.8399963378906" stroke-dasharray="3,0" stroke="#33bbee" stroke-width="2px"></line></g>
+<!-- Govern&#45;&gt;Shelter -->
 <g id="edge11" class="edge">
-<title>Govern-&gt;Energy</title>
-<path fill="none" stroke="#bbbbbb" stroke-width="2" d="M226.01,-153.87C219.33,-143.81 211.64,-132.25 204.97,-122.21"></path>
-<polygon fill="#bbbbbb" stroke="#bbbbbb" stroke-width="2" points="228.73,-157.96 224.09,-155.04 228.28,-158.19 225.55,-154.08 225.97,-153.8 226.38,-153.52 229.12,-157.63 227.84,-152.55 228.73,-157.96"></polygon>
-<polygon fill="#bbbbbb" stroke="#bbbbbb" stroke-width="2" points="202.31,-118.22 206.95,-121.14 202.76,-118 205.5,-122.11 205.08,-122.38 204.66,-122.66 201.93,-118.55 203.21,-123.63 202.31,-118.22"></polygon>
+<title>Govern-&gt;Shelter</title>
+<path fill="none" stroke="#bbbbbb" stroke-width="2" d="M252.46,-197.37C252.32,-213.74 252.14,-234.69 252,-250.97"></path>
+<polygon fill="#bbbbbb" stroke="#bbbbbb" stroke-width="2" points="252.51,-192.39 254.71,-197.41 253.01,-192.46 252.96,-197.4 252.46,-197.39 251.96,-197.39 252.01,-192.45 250.21,-197.37 252.51,-192.39"></polygon>
+<polygon fill="#bbbbbb" stroke="#bbbbbb" stroke-width="2" points="251.96,-255.65 249.75,-250.63 251.46,-255.59 251.5,-250.65 252,-250.65 252.5,-250.66 252.46,-255.6 254.25,-250.67 251.96,-255.65"></polygon>
 </g>
-<!-- Govern&#45;&gt;Water -->
+<!-- Food -->
+<g id="pt5" class="node transforms zoomable notenotattached">
+<title>Food</title>
+<g id="a_pt5"><a xlink:href="#Top.Food" xlink:title="Food
+">
+<path fill="none" stroke="#33bbee" stroke-width="2" d="M179.77,-258.5C179.77,-258.5 149.77,-258.5 149.77,-258.5 143.77,-258.5 137.77,-252.5 137.77,-246.5 137.77,-246.5 137.77,-234.5 137.77,-234.5 137.77,-228.5 143.77,-222.5 149.77,-222.5 149.77,-222.5 179.77,-222.5 179.77,-222.5 185.77,-222.5 191.77,-228.5 191.77,-234.5 191.77,-234.5 191.77,-246.5 191.77,-246.5 191.77,-252.5 185.77,-258.5 179.77,-258.5"></path>
+<text text-anchor="middle" x="164.77" y="-244.7" font-family="Arial" font-size="14.00">0.2</text>
+<text text-anchor="middle" x="164.77" y="-227.9" font-family="Arial" font-size="14.00">Food</text>
+</a>
+</g>
+<line x1="137.77000427246094" y1="-241.5" x2="191.77000427246094" y2="-241.5" stroke-dasharray="3,0" stroke="#33bbee" stroke-width="2px"></line><circle cx="138.77000427246094" cy="-257.5" r="3" stroke="#ee3377" fill="#ee3377"></circle></g>
+<!-- Govern&#45;&gt;Food -->
 <g id="edge12" class="edge">
-<title>Govern-&gt;Water</title>
-<path fill="none" stroke="#bbbbbb" stroke-width="2" d="M235.82,-204.57C233.5,-213.28 230.91,-223.01 228.59,-231.73"></path>
-<polygon fill="#bbbbbb" stroke="#bbbbbb" stroke-width="2" points="237.06,-199.89 237.95,-205.3 237.53,-200.08 236.26,-204.85 235.78,-204.72 235.3,-204.59 236.57,-199.82 233.6,-204.14 237.06,-199.89"></polygon>
-<polygon fill="#bbbbbb" stroke="#bbbbbb" stroke-width="2" points="227.34,-236.42 226.45,-231.01 226.88,-236.23 228.15,-231.46 228.63,-231.58 229.11,-231.71 227.84,-236.48 230.8,-232.16 227.34,-236.42"></polygon>
+<title>Govern-&gt;Food</title>
+<path fill="none" stroke="#bbbbbb" stroke-width="2" d="M222.98,-194.51C213.75,-201.8 203.59,-209.83 194.37,-217.12"></path>
+<polygon fill="#bbbbbb" stroke="#bbbbbb" stroke-width="2" points="226.75,-191.53 224.23,-196.4 227.01,-191.96 223.14,-195.02 222.83,-194.63 222.52,-194.24 226.39,-191.18 221.44,-192.86 226.75,-191.53"></polygon>
+<polygon fill="#bbbbbb" stroke="#bbbbbb" stroke-width="2" points="190.68,-220.03 193.21,-215.17 190.42,-219.6 194.29,-216.54 194.6,-216.93 194.91,-217.33 191.04,-220.39 196,-218.7 190.68,-220.03"></polygon>
 </g>
-<!-- Govern&#45;&gt;Medical -->
+<!-- Energy -->
+<g id="yrx" class="node transforms zoomnotable notenotattached">
+<title>Energy</title>
+<g id="a_yrx"><a xlink:title="Energy
+">
+<path fill="none" stroke="#33bbee" stroke-width="2" d="M378.95,-240.81C378.95,-240.81 344.19,-240.81 344.19,-240.81 338.19,-240.81 332.19,-234.81 332.19,-228.81 332.19,-228.81 332.19,-216.81 332.19,-216.81 332.19,-210.81 338.19,-204.81 344.19,-204.81 344.19,-204.81 378.95,-204.81 378.95,-204.81 384.95,-204.81 390.95,-210.81 390.95,-216.81 390.95,-216.81 390.95,-228.81 390.95,-228.81 390.95,-234.81 384.95,-240.81 378.95,-240.81"></path>
+<text text-anchor="middle" x="361.57" y="-227.01" font-family="Arial" font-size="14.00">0.6</text>
+<text text-anchor="middle" x="361.57" y="-210.21" font-family="Arial" font-size="14.00">Energy</text>
+</a>
+</g>
+<line x1="332.19000244140625" y1="-223.80999755859375" x2="390.95001220703125" y2="-223.80999755859375" stroke-dasharray="3,0" stroke="#33bbee" stroke-width="2px"></line></g>
+<!-- Govern&#45;&gt;Energy -->
 <g id="edge13" class="edge">
+<title>Govern-&gt;Energy</title>
+<path fill="none" stroke="#bbbbbb" stroke-width="2" d="M290.07,-188.81C301.33,-194.17 313.67,-200.03 324.88,-205.37"></path>
+<polygon fill="#bbbbbb" stroke="#bbbbbb" stroke-width="2" points="285.8,-186.78 291.28,-186.9 286.07,-186.36 290.53,-188.48 290.31,-188.93 290.1,-189.38 285.64,-187.26 289.35,-190.96 285.8,-186.78"></polygon>
+<polygon fill="#bbbbbb" stroke="#bbbbbb" stroke-width="2" points="329.13,-207.39 323.65,-207.27 328.86,-207.81 324.4,-205.69 324.62,-205.24 324.83,-204.79 329.29,-206.91 325.58,-203.21 329.13,-207.39"></polygon>
+</g>
+<!-- Water -->
+<g id="hvh" class="node transforms zoomnotable notenotattached">
+<title>Water</title>
+<g id="a_hvh"><a xlink:title="Water
+">
+<path fill="none" stroke="#33bbee" stroke-width="2" d="M141.44,-168.61C141.44,-168.61 111.44,-168.61 111.44,-168.61 105.44,-168.61 99.44,-162.61 99.44,-156.61 99.44,-156.61 99.44,-144.61 99.44,-144.61 99.44,-138.61 105.44,-132.61 111.44,-132.61 111.44,-132.61 141.44,-132.61 141.44,-132.61 147.44,-132.61 153.44,-138.61 153.44,-144.61 153.44,-144.61 153.44,-156.61 153.44,-156.61 153.44,-162.61 147.44,-168.61 141.44,-168.61"></path>
+<text text-anchor="middle" x="126.44" y="-154.81" font-family="Arial" font-size="14.00">0.7</text>
+<text text-anchor="middle" x="126.44" y="-138.01" font-family="Arial" font-size="14.00">Water</text>
+</a>
+</g>
+<line x1="99.44000244140625" y1="-151.61000061035156" x2="153.44000244140625" y2="-151.61000061035156" stroke-dasharray="3,0" stroke="#33bbee" stroke-width="2px"></line></g>
+<!-- Govern&#45;&gt;Water -->
+<g id="edge14" class="edge">
+<title>Govern-&gt;Water</title>
+<path fill="none" stroke="#bbbbbb" stroke-width="2" d="M214.59,-164.87C197.8,-162.16 178.19,-158.99 161.73,-156.32"></path>
+<polygon fill="#bbbbbb" stroke="#bbbbbb" stroke-width="2" points="219.4,-165.65 214.1,-167.08 219.26,-166.14 214.38,-165.35 214.46,-164.85 214.54,-164.36 219.42,-165.15 214.82,-162.63 219.4,-165.65"></polygon>
+<polygon fill="#bbbbbb" stroke="#bbbbbb" stroke-width="2" points="156.82,-155.53 162.12,-154.11 156.97,-155.04 161.84,-155.83 161.76,-156.33 161.68,-156.82 156.81,-156.03 161.4,-158.55 156.82,-155.53"></polygon>
+</g>
+<!-- Medical -->
+<g id="xz2" class="node transforms zoomnotable notenotattached">
+<title>Medical</title>
+<g id="a_xz2"><a xlink:title="Medical
+">
+<path fill="none" stroke="#33bbee" stroke-width="2" d="M371.97,-144.04C371.97,-144.04 333.33,-144.04 333.33,-144.04 327.33,-144.04 321.33,-138.04 321.33,-132.04 321.33,-132.04 321.33,-120.04 321.33,-120.04 321.33,-114.04 327.33,-108.04 333.33,-108.04 333.33,-108.04 371.97,-108.04 371.97,-108.04 377.97,-108.04 383.97,-114.04 383.97,-120.04 383.97,-120.04 383.97,-132.04 383.97,-132.04 383.97,-138.04 377.97,-144.04 371.97,-144.04"></path>
+<text text-anchor="middle" x="352.65" y="-130.24" font-family="Arial" font-size="14.00">0.8</text>
+<text text-anchor="middle" x="352.65" y="-113.44" font-family="Arial" font-size="14.00">Medical</text>
+</a>
+</g>
+<line x1="321.3299865722656" y1="-127.03999328613281" x2="383.9700012207031" y2="-127.03999328613281" stroke-dasharray="3,0" stroke="#33bbee" stroke-width="2px"></line></g>
+<!-- Govern&#45;&gt;Medical -->
+<g id="edge15" class="edge">
 <title>Govern-&gt;Medical</title>
-<path fill="none" stroke="#bbbbbb" stroke-width="2" d="M275.21,-202.03C276.98,-203.29 278.76,-204.55 280.53,-205.81"></path>
-<polygon fill="#bbbbbb" stroke="#bbbbbb" stroke-width="2" points="271.31,-199.26 276.69,-200.32 271.66,-198.89 275.68,-201.75 275.39,-202.16 275.1,-202.56 271.08,-199.7 274.09,-203.99 271.31,-199.26"></polygon>
-<polygon fill="#bbbbbb" stroke="#bbbbbb" stroke-width="2" points="284.51,-208.64 279.13,-207.58 284.17,-209.01 280.15,-206.15 280.44,-205.74 280.73,-205.33 284.75,-208.19 281.74,-203.91 284.51,-208.64"></polygon>
+<path fill="none" stroke="#bbbbbb" stroke-width="2" d="M290.5,-154.02C298.23,-150.54 306.38,-146.87 314.14,-143.38"></path>
+<polygon fill="#bbbbbb" stroke="#bbbbbb" stroke-width="2" points="285.99,-156.05 289.63,-151.94 285.84,-155.57 290.35,-153.54 290.55,-154 290.76,-154.45 286.25,-156.48 291.47,-156.05 285.99,-156.05"></polygon>
+<polygon fill="#bbbbbb" stroke="#bbbbbb" stroke-width="2" points="318.33,-141.49 314.69,-145.6 318.48,-141.97 313.98,-144 313.77,-143.54 313.57,-143.09 318.07,-141.06 312.85,-141.49 318.33,-141.49"></polygon>
+</g>
+<!-- Farmland -->
+<g id="q7u" class="node locations">
+<title>Farmland</title>
+<polygon fill="none" stroke="#cc3311" stroke-width="2" points="62.19,-331.21 62.19,-367.21 168.02,-367.21 168.02,-331.21 62.19,-331.21"></polygon>
+<text text-anchor="middle" x="78.34" y="-345.01" font-family="Arial" font-size="14.00">R3</text>
+<polyline fill="none" stroke="#cc3311" stroke-width="2" points="94.49,-331.21 94.49,-367.21"></polyline>
+<text text-anchor="middle" x="131.25" y="-345.01" font-family="Arial" font-size="14.00">Farmland</text>
+</g>
+<!-- Public -->
+<g id="r3a" class="node locations">
+<title>Public</title>
+<polygon fill="none" stroke="#cc3311" stroke-width="2" points="263.01,-332.62 263.01,-368.62 347.83,-368.62 347.83,-332.62 263.01,-332.62"></polygon>
+<text text-anchor="middle" x="279.15" y="-346.42" font-family="Arial" font-size="14.00">R4</text>
+<polyline fill="none" stroke="#cc3311" stroke-width="2" points="295.3,-332.62 295.3,-368.62"></polyline>
+<text text-anchor="middle" x="321.57" y="-346.42" font-family="Arial" font-size="14.00">Public</text>
+</g>
+<!-- Generation -->
+<g id="vqs" class="node locations">
+<title>Generation</title>
+<polygon fill="none" stroke="#cc3311" stroke-width="2" points="395.52,-287.47 395.52,-323.47 511.49,-323.47 511.49,-287.47 395.52,-287.47"></polygon>
+<text text-anchor="middle" x="411.67" y="-301.27" font-family="Arial" font-size="14.00">R5</text>
+<polyline fill="none" stroke="#cc3311" stroke-width="2" points="427.82,-287.47 427.82,-323.47"></polyline>
+<text text-anchor="middle" x="469.65" y="-301.27" font-family="Arial" font-size="14.00">Generation</text>
+</g>
+<!-- Stores -->
+<g id="wzh" class="node locations">
+<title>Stores</title>
+<polygon fill="none" stroke="#cc3311" stroke-width="2" points="0,-233.2 0,-269.2 87.16,-269.2 87.16,-233.2 0,-233.2"></polygon>
+<text text-anchor="middle" x="16.15" y="-247" font-family="Arial" font-size="14.00">R6</text>
+<polyline fill="none" stroke="#cc3311" stroke-width="2" points="32.3,-233.2 32.3,-269.2"></polyline>
+<text text-anchor="middle" x="59.73" y="-247" font-family="Arial" font-size="14.00">Stores</text>
+</g>
+<!-- Supplies -->
+<g id="wzj" class="node locations">
+<title>Supplies</title>
+<polygon fill="none" stroke="#cc3311" stroke-width="2" points="421.5,-88.82 421.5,-124.82 521.9,-124.82 521.9,-88.82 421.5,-88.82"></polygon>
+<text text-anchor="middle" x="437.65" y="-102.62" font-family="Arial" font-size="14.00">R7</text>
+<polyline fill="none" stroke="#cc3311" stroke-width="2" points="453.8,-88.82 453.8,-124.82"></polyline>
+<text text-anchor="middle" x="487.85" y="-102.62" font-family="Arial" font-size="14.00">Supplies</text>
+</g>
+<!-- Dams -->
+<g id="il6" class="node locations">
+<title>Dams</title>
+<polygon fill="none" stroke="#cc3311" stroke-width="2" points="116.1,-0.5 116.1,-36.5 199.36,-36.5 199.36,-0.5 116.1,-0.5"></polygon>
+<text text-anchor="middle" x="132.25" y="-14.3" font-family="Arial" font-size="14.00">R8</text>
+<polyline fill="none" stroke="#cc3311" stroke-width="2" points="148.4,-0.5 148.4,-36.5"></polyline>
+<text text-anchor="middle" x="173.88" y="-14.3" font-family="Arial" font-size="14.00">Dams</text>
+</g>
+<!-- Hospitals -->
+<g id="ees" class="node locations">
+<title>Hospitals</title>
+<polygon fill="none" stroke="#cc3311" stroke-width="2" points="341.56,-3.28 341.56,-39.28 445.83,-39.28 445.83,-3.28 341.56,-3.28"></polygon>
+<text text-anchor="middle" x="357.7" y="-17.08" font-family="Arial" font-size="14.00">R9</text>
+<polyline fill="none" stroke="#cc3311" stroke-width="2" points="373.85,-3.28 373.85,-39.28"></polyline>
+<text text-anchor="middle" x="409.84" y="-17.08" font-family="Arial" font-size="14.00">Hospitals</text>
+</g>
+<!-- Shelter&#45;&gt;Public -->
+<g id="edge8" class="edge">
+<title>Shelter-&gt;Public</title>
+<path fill="none" stroke="#bbbbbb" stroke-width="2" d="M269.88,-301.74C277,-311.52 285.03,-322.57 291.65,-331.68"></path>
+<polygon fill="#bbbbbb" stroke="#bbbbbb" stroke-width="2" points="267.03,-297.81 271.79,-300.53 267.47,-297.57 270.37,-301.56 269.97,-301.86 269.56,-302.15 266.66,-298.16 268.15,-303.18 267.03,-297.81"></polygon>
+</g>
+<!-- Food&#45;&gt;Farmland -->
+<g id="edge6" class="edge">
+<title>Food-&gt;Farmland</title>
+<path fill="none" stroke="#bbbbbb" stroke-width="2" d="M153.08,-266.1C145.11,-283.53 134.61,-306.52 126.67,-323.89"></path>
+<polygon fill="#bbbbbb" stroke="#bbbbbb" stroke-width="2" points="155.11,-261.65 155.08,-267.14 155.54,-261.92 153.48,-266.41 153.03,-266.2 152.57,-265.99 154.63,-261.5 150.98,-265.27 155.11,-261.65"></polygon>
+<polygon fill="#bbbbbb" stroke="#bbbbbb" stroke-width="2" points="124.67,-328.27 124.7,-322.79 124.24,-328.01 126.29,-323.52 126.75,-323.72 127.2,-323.93 125.15,-328.42 128.8,-324.66 124.67,-328.27"></polygon>
+</g>
+<!-- Food&#45;&gt;Stores -->
+<g id="edge7" class="edge">
+<title>Food-&gt;Stores</title>
+<path fill="none" stroke="#bbbbbb" stroke-width="2" d="M136.97,-242.96C124.59,-244.05 109.6,-245.37 95.29,-246.64"></path>
+<polygon fill="#bbbbbb" stroke="#bbbbbb" stroke-width="2" points="90.31,-247.08 95.09,-244.4 90.33,-246.57 95.24,-246.14 95.29,-246.64 95.33,-247.14 90.41,-247.57 95.48,-248.88 90.31,-247.08"></polygon>
+</g>
+<!-- Energy&#45;&gt;Generation -->
+<g id="edge9" class="edge">
+<title>Energy-&gt;Generation</title>
+<path fill="none" stroke="#bbbbbb" stroke-width="2" d="M387.88,-246.46C402,-259.16 419.17,-274.6 432.41,-286.5"></path>
+<polygon fill="#bbbbbb" stroke="#bbbbbb" stroke-width="2" points="384.24,-243.2 389.46,-244.87 384.62,-242.87 388.29,-246.17 387.96,-246.54 387.63,-246.91 383.95,-243.61 386.46,-248.21 384.24,-243.2"></polygon>
+</g>
+<!-- Water&#45;&gt;Dams -->
+<g id="edge5" class="edge">
+<title>Water-&gt;Dams</title>
+<path fill="none" stroke="#bbbbbb" stroke-width="2" d="M132.63,-124.48C138.71,-98.8 147.84,-60.24 153.25,-37.39"></path>
+<polygon fill="#bbbbbb" stroke="#bbbbbb" stroke-width="2" points="131.48,-129.31 130.44,-123.93 131.01,-129.14 132.15,-124.33 132.63,-124.45 133.12,-124.56 131.98,-129.37 134.82,-124.97 131.48,-129.31"></polygon>
+</g>
+<!-- Medical&#45;&gt;Supplies -->
+<g id="edge4" class="edge">
+<title>Medical-&gt;Supplies</title>
+<path fill="none" stroke="#bbbbbb" stroke-width="2" d="M392.03,-119.69C398.89,-118.58 406.16,-117.4 413.41,-116.23"></path>
+<polygon fill="#bbbbbb" stroke="#bbbbbb" stroke-width="2" points="387.27,-120.45 391.85,-117.44 387.25,-119.95 392.13,-119.16 392.21,-119.66 392.29,-120.15 387.41,-120.94 392.57,-121.88 387.27,-120.45"></polygon>
+<polygon fill="#bbbbbb" stroke="#bbbbbb" stroke-width="2" points="418.22,-115.46 413.65,-118.48 418.24,-115.96 413.37,-116.75 413.29,-116.25 413.21,-115.76 418.08,-114.97 412.93,-114.03 418.22,-115.46"></polygon>
+</g>
+<!-- Medical&#45;&gt;Hospitals -->
+<g id="edge3" class="edge">
+<title>Medical-&gt;Hospitals</title>
+<path fill="none" stroke="#bbbbbb" stroke-width="2" d="M362.55,-100.76C368.95,-84.44 377.24,-63.28 383.66,-46.9"></path>
+<polygon fill="#bbbbbb" stroke="#bbbbbb" stroke-width="2" points="360.87,-105.04 360.6,-99.57 360.43,-104.8 362.23,-100.21 362.7,-100.39 363.16,-100.57 361.36,-105.17 364.79,-101.21 360.87,-105.04"></polygon>
+<polygon fill="#bbbbbb" stroke="#bbbbbb" stroke-width="2" points="385.39,-42.47 385.66,-47.94 385.83,-42.71 384.03,-47.31 383.57,-47.12 383.1,-46.94 384.9,-42.34 381.47,-46.3 385.39,-42.47"></polygon>
 </g>
 </g>
 </svg>

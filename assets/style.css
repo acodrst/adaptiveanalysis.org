@@ -41,6 +41,9 @@ a:hover {
 .zoomable a:link {
   text-decoration: none;
 }
+.zoomnotable a {
+  text-decoration: none;
+}
 .zoomable a:hover {
   text-decoration: underline;
 }

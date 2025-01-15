@@ -10,11 +10,11 @@
   <script src="fzstd.min.js"> </script>
   <script src="fflate.min.js"></script>
   <script>
-  const t="20250103T221204766Z",
-      a="d9300aba",
-      g = "295743",
-      tl="1264829";
-  fetch("20250103T221204766Z-d9300aba.png").then((q) => {
+  const t="20250115T230109863Z",
+      a="cc865bb5",
+      g = "282730",
+      tl="1376024";
+  fetch("20250115T230109863Z-cc865bb5.png").then((q) => {
   q.arrayBuffer().then((a) => {
     let l = fflate.unzlibSync(new Uint8Array(a.slice(41, -16))),
       f = 0,
@@ -32,7 +32,7 @@
         p++;
       }
     } while (f < l.length);
-    let z = fzstd.decompress(u.slice(7 * 1024, 7 * 1024 + 295743)),
+    let z = fzstd.decompress(u.slice(7 * 1024, 7 * 1024 + 282730)),
       s = document.createElement("script");
     s.appendChild(document.createTextNode(new TextDecoder().decode(z)));
     document.body.appendChild(s);

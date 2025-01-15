@@ -3270,6 +3270,7 @@ iframe.id="pdf_frame";
 document.getElementById('pdf').appendChild(iframe);
 const style = document.createElement("style");
 style.textContent = site.css;
+console.log(site.nn);
 document.head.appendChild(style);
 function svg_out(){
   const blob = new Blob([select("svg").node().outerHTML],
@@ -3301,6 +3302,10 @@ function render(level) {
   gr.selectAll(".node")
     .each(function (d) {
       const node = select(this);
+      if (node.attr("class").includes("datastores")){
+        const pl= node.selectAll("polyline");
+        pl.attr("stroke-dasharray", "3,3");
+      }
       if (
         node.attr("class").includes("transform") ||
         node.attr("class").includes("process")
@@ -3323,6 +3328,14 @@ function render(level) {
             .attr("stroke","#ee3377")
             .attr("fill","#ee3377");
         }
+        if (node.attr("class").includes("noteattached")) {
+          node.append("circle")
+            .attr("cx", bbox.x +bbox.width -1)
+            .attr("cy", bbox.y + 1)
+            .attr("r", "3")
+            .attr("stroke","#ee7733")
+            .attr("fill","#ee7733");
+      }
       }
     });
 }
