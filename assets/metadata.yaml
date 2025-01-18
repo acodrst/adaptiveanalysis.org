@@ -68,7 +68,7 @@ header-includes:
   \usegdlibrary{force} 
   \tikzstyle{arrow}=[line width=1pt, ->, >=latex ]
   \tikzstyle{vertex}=[draw,circle,minimum size=14pt]
-  \newcommand{\ada}{\hspace{12pt}\begin{tikzpicture}[transform canvas={scale=.14,xshift=-90pt,yshift=-13pt}]\draw[step=1,gray,line width=.5pt] grid (3,3);\draw[line width=10pt,blue,cap=round](.05,2.95) -- (.7,1.7);\draw [line width=10pt,blue,cap=round] (.7,1.7) -- (1.3,2.2);\draw [line width=10pt,blue,cap=round] (1.3,2.2) -- (2.95,.05);\end{tikzpicture}\hspace{2px}}
+  \newcommand{\ada}{\href{https://adaptiveanalysis.org}{\hspace{12pt}\begin{tikzpicture}[transform canvas={scale=.14,xshift=-90pt,yshift=-13pt}]\draw[step=1,gray,line width=.5pt] grid (3,3);\draw[line width=10pt,blue,cap=round](.05,2.95) -- (.7,1.7);\draw [line width=10pt,blue,cap=round] (.7,1.7) -- (1.3,2.2);\draw [line width=10pt,blue,cap=round] (1.3,2.2) -- (2.95,.05);\end{tikzpicture}\hspace{2px}}}
   \newcommand{\tsa}{\href{https://doi.org/10.5281/zenodo.7826793}{\textbf{\textcolor{left}3\kern-.3ex\raisebox{-.48ex}{\textcolor{middle}{S}}\kern-.15ex\textcolor{teal}{A}}}\hspace{2px}} 
   \newcommand{\trs}{\href{https://doi.org/10.5281/zenodo.13684896}{\hspace{16pt}\begin{tikzpicture}[simple necklace layout,transform canvas={scale=.4,rotate=-60,xshift=-22pt,yshift=2pt}]\node(1)[vertex,orange,fill=orange]{};\node(0)[vertex,teal,fill=teal]{};\node(2)[vertex,magenta,fill=magenta]{};\path(0)edge[arrow](1);\path(1)edge[arrow](2);\path (2)edge[arrow](0);\end{tikzpicture}}\hspace{2px}}
   ```
@@ -90,7 +90,7 @@ abstract:
   \draw [line width=4pt,blue,cap=round] (.7,1.7) -- (1.3,2.2);
   \draw [line width=4pt,blue,cap=round] (1.3,2.2) -- (2.95,.05);
   \end{tikzpicture}
-  \normalsize \noindent   My papers Triple System Analysis ( \tsa) and Adaptive Analysis ( \trs) explain the basic ideas of using triples for system analysis. A Flow Visualization Practionary ( \ada) uses the combined material/data flow model from \trs\hspace{-3pt}, simplifies the symbols, and shows how to create interactive models and narrative documents like \ada.
+  \normalsize \noindent   My papers Triple System Analysis ( \tsa) and Adaptive Analysis ( \trs) explain how to use multi-level knowledge graphs for system analysis. A Flow Visualization Practionary ( \ada) uses the combined material/data flow model from \trs\hspace{-3pt}, simplifies the symbols, and shows how to create interactive models and narrative documents like \ada.  The reader needs to be curious and follow the ideas.  Review \tsa and \trs before reading further.  There is no product.  There is nothing to purchase or subscribe to.  This paper will help you build your own models.
 bibliography: assets/My Library.bib
 geometry:
 - top=.5in

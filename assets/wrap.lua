@@ -9,7 +9,6 @@ return {
 end
 
 function Figure(el)
-  print(el.content[1].content[1])
   if el.content[1].content[1].src=='images/Top.svg'
   then 
     return wrap(el,'o')
