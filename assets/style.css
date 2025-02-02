@@ -87,10 +87,13 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
-  cursor: pointer;
 }
 #heading svg{
   height: 36px;
+}
+#heading svg:hover{
+  cursor: pointer;
+  background-color: lightyellow;
 }
 #pdf_frame{
   width: 100%;
