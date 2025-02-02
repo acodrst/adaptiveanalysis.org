@@ -3211,8 +3211,8 @@ See https://github.com/adobe-type-tools/cmap-resources
   :root{
     --viewer-container-height:0;
     --pdfViewer-padding-bottom:0;
-    --page-margin:1px auto -8px;
-    --page-border:9px solid transparent;
+    --page-margin:0;
+    --page-border:0;
     --spreadHorizontalWrapped-margin-LR:-3.5px;
     --loading-icon-delay:400ms;
   }
@@ -3220,8 +3220,8 @@ See https://github.com/adobe-type-tools/cmap-resources
   @media screen and (forced-colors: active){
     :root{
       --pdfViewer-padding-bottom:9px;
-      --page-margin:8px auto -1px;
-      --page-border:1px solid CanvasText;
+      --page-margin:0;
+      --page-border:0;
       --spreadHorizontalWrapped-margin-LR:3.5px;
     }
   }
@@ -5885,15 +5885,15 @@ q.arrayBuffer().then((a) => {
 
 
 ;// ./web/ui_utils.js
-const DEFAULT_SCALE_VALUE = "auto";
+const DEFAULT_SCALE_VALUE = "page-width";
 const DEFAULT_SCALE = 1.0;
 const DEFAULT_SCALE_DELTA = 1.1;
 const MIN_SCALE = 0.1;
 const MAX_SCALE = 10.0;
 const UNKNOWN_SCALE = 0;
 const MAX_AUTO_SCALE = 1.25;
-const SCROLLBAR_PADDING = 40;
-const VERTICAL_PADDING = 5;
+const SCROLLBAR_PADDING = 0;
+const VERTICAL_PADDING = 0;
 const RenderingStates = {
 INITIAL: 0,
 RUNNING: 1,
@@ -6567,7 +6567,7 @@ printResolution: {
   kind: OptionKind.VIEWER
 },
 sidebarViewOnLoad: {
-  value: -1,
+  value: 0,
   kind: OptionKind.VIEWER + OptionKind.PREFERENCE
 },
 scrollModeOnLoad: {

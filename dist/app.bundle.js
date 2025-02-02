@@ -3270,10 +3270,9 @@ iframe.id="pdf_frame";
 document.getElementById('pdf').appendChild(iframe);
 const style = document.createElement("style");
 style.textContent = site.css;
-console.log(site.nn);
 document.head.appendChild(style);
 function svg_out(){
-  const blob = new Blob([select("svg").node().outerHTML],
+  const blob = new Blob([select("#graph svg").node().outerHTML],
   {type: "text/plain;charset=utf-8"});
   saveAs(blob, localStorage.getItem("path"));
 }
@@ -3282,7 +3281,7 @@ function render(level) {
   document.getElementById('pdf').style.display="none";
   document.getElementById('graph').style.display="block";
   document.getElementById('path').style.display="block";
-  document.getElementById('content').style.gridRow="4/6";
+  document.getElementById('content').style.gridRow="3";
   let lev = [];
   let leva = [];
   for (let i of level.split(".")) {
@@ -3292,7 +3291,7 @@ function render(level) {
   localStorage.setItem("path",`${lev.join('.')}.svg`);
   document.getElementById("path").innerHTML = `${leva.join(".")} &nbsp; <a href="#export" title="Model">Export SVG</a>`;
   document.getElementById("graph").innerHTML = site.diagrams[level];
-  const gr = select("svg");
+  const gr = select("#graph svg");
   let zoom$1 = zoom()
     .on("zoom", zoomed);
   function zoomed(e) {
@@ -3346,14 +3345,14 @@ function terms(){
   document.getElementById('pdf').style.display="none";
   document.getElementById('graph').style.display="none";
   document.getElementById('path').style.display="none";
-  document.getElementById('content').style.gridRow="3/6";
+  document.getElementById('content').style.gridRow="2/4";
 }
 function description(){
   document.getElementById('terms').style.display="none";
   document.getElementById('pdf').style.display="flex";
   document.getElementById('graph').style.display="none";
   document.getElementById('path').style.display="none";
-  document.getElementById('content').style.gridRow="3/6";
+  document.getElementById('content').style.gridRow="2/4";
 }
 refresh();
 function refresh() {
