@@ -1,30 +1,30 @@
 import * as d3 from "d3";
 document.body.insertAdjacentHTML("beforeend", site.page);
 const iframe = document.createElement('iframe');
-iframe.srcdoc = site.viewer.replace("thisistss",t).replace("thisisadler",a).replace("thisislength",g).replace("thisistextlength",tl);
-iframe.id="pdf_frame"
+iframe.srcdoc = site.viewer.replace("thisistss", t).replace("thisisadler", a).replace("thisislength", g).replace("thisistextlength", tl);
+iframe.id = "pdf_frame"
 document.getElementById('pdf').appendChild(iframe);
 const style = document.createElement("style");
 style.textContent = site.css;
 document.head.appendChild(style);
-function svg_out(){
+function svg_out() {
   const blob = new Blob([d3.select("#graph svg").node().outerHTML],
-  {type: "text/plain;charset=utf-8"});
+    { type: "text/plain;charset=utf-8" });
   saveAs(blob, localStorage.getItem("path"));
 }
 function render(level) {
-  document.getElementById('terms').style.display="none";
-  document.getElementById('pdf').style.display="none";
-  document.getElementById('graph').style.display="block";
-  document.getElementById('path').style.display="block";
-  document.getElementById('content').style.gridRow="3";
+  document.getElementById('terms').style.display = "none";
+  document.getElementById('pdf').style.display = "none";
+  document.getElementById('graph').style.display = "block";
+  document.getElementById('path').style.display = "block";
+  document.getElementById('content').style.gridRow = "3";
   let lev = [];
   let leva = [];
   for (let i of level.split(".")) {
     lev.push(i);
     leva.push(`<a href="#${lev.join(".")}">${i}</a>`);
   }
-  localStorage.setItem("path",`${lev.join('.')}.svg`);
+  localStorage.setItem("path", `${lev.join('.')}.svg`);
   document.getElementById("path").innerHTML = `${leva.join(".")} &nbsp; <a href="#export" title="Model">Export SVG</a>`;
   document.getElementById("graph").innerHTML = site.diagrams[level];
   const gr = d3.select("#graph svg");
@@ -37,8 +37,8 @@ function render(level) {
   gr.selectAll(".node")
     .each(function (d) {
       const node = d3.select(this);
-      if (node.attr("class").includes("datastores")){
-        const pl= node.selectAll("polyline")
+      if (node.attr("class").includes("datastores")) {
+        const pl = node.selectAll("polyline")
         pl.attr("stroke-dasharray", "3,3")
       }
       if (
@@ -53,50 +53,60 @@ function render(level) {
           .attr("x2", bbox.x + bbox.width)
           .attr("y2", bbox.y + 17)
           .attr("stroke-dasharray", bar)
-          .attr("stroke","#33bbee")
-          .attr("stroke-width","2px");
+          .attr("stroke", "#33bbee")
+          .attr("stroke-width", "2px");
         if (node.attr("class").includes("zoomable")) {
           node.append("circle")
             .attr("cx", bbox.x + 1)
             .attr("cy", bbox.y + 1)
             .attr("r", "3")
-            .attr("stroke","#ee3377")
-            .attr("fill","#ee3377")
+            .attr("stroke", "#ee3377")
+            .attr("fill", "#ee3377")
         }
         if (node.attr("class").includes("noteattached")) {
           node.append("circle")
-            .attr("cx", bbox.x +bbox.width -1)
+            .attr("cx", bbox.x + bbox.width - 1)
             .attr("cy", bbox.y + 1)
             .attr("r", "3")
-            .attr("stroke","#ee7733")
-            .attr("fill","#ee7733")
-      }
+            .attr("stroke", "#ee7733")
+            .attr("fill", "#ee7733")
+        }
+        if (node.attr("class").includes("has_subclass")) {
+          node.append("circle")
+            .attr("cx", bbox.x + bbox.width - 1)
+            .attr("cy", bbox.y + bbox.height - 1)
+            .attr("r", "3")
+            .attr("stroke", "#0077bb")
+            .attr("fill", "#0077bb")
+
+        }
       }
     });
 }
+//0077bb
 //globalThis.location.hash = '';
 
-function terms(){
-  document.getElementById('terms').style.display="block";
-  document.getElementById('pdf').style.display="none";
-  document.getElementById('graph').style.display="none";
-  document.getElementById('path').style.display="none";
-  document.getElementById('content').style.gridRow="2/4";
+function terms() {
+  document.getElementById('terms').style.display = "block";
+  document.getElementById('pdf').style.display = "none";
+  document.getElementById('graph').style.display = "none";
+  document.getElementById('path').style.display = "none";
+  document.getElementById('content').style.gridRow = "2/4";
 }
-function description(){
-  document.getElementById('terms').style.display="none";
-  document.getElementById('pdf').style.display="flex";
-  document.getElementById('graph').style.display="none";
-  document.getElementById('path').style.display="none";
-  document.getElementById('content').style.gridRow="2/4";
+function description() {
+  document.getElementById('terms').style.display = "none";
+  document.getElementById('pdf').style.display = "flex";
+  document.getElementById('graph').style.display = "none";
+  document.getElementById('path').style.display = "none";
+  document.getElementById('content').style.gridRow = "2/4";
 }
 refresh();
 function refresh() {
   const hash = globalThis.location.hash.substring(1) || "home";
   hash == "terms" ? terms()
     : hash == "export" ? svg_out()
-    : hash in site.diagrams ? render(hash)
-    : description();
+      : hash in site.diagrams ? render(hash)
+        : description();
 }
 globalThis.addEventListener("hashchange", () => {
   refresh();

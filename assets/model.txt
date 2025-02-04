@@ -71,13 +71,10 @@ Canal
 Farmers
 :: level
 Top
-:: datastores
-K-T DB 
 :: processes
 KorTalos
 :: both
 Govern
-K-T DB 
 :: locations
 Farmland
 Public
@@ -227,11 +224,15 @@ Seeder AI
 Cloud Block Storage Service
 Planters
 Farmers
+:: subclass_of
+Top.KorTalos.PartnerServices.Kor2Processor
 :: processes
 Wheat Link
 :: both
 Cloud Block Storage Service
 Farmers
+:: subclass_of
+Top.KorTalos.PartnerServices.Kor2Processor
 :: processes
 Inventory Queen Cloud
 WL Plant
@@ -251,6 +252,8 @@ Inventory Queen Cloud
 Inventory Queen Cloud DB
 Farmers
 Planters
+:: subclass_of
+Top.KorTalos.PartnerServices.Kor2Processor
 :: agents
 Planting Lead
 Farmers
@@ -268,7 +271,8 @@ Planters
 IP Text
 Planting Lead
 Wheat Link
-:: both
+:: subclass_of
+Top.KorTalos.PartnerServices.Kor2Processor
 :: transforms
 Sow
 :: both
@@ -642,6 +646,23 @@ Junie and Bob handle all A/R
 KorTalos Customers
 :: datastores
 Tracker DB
+:: level
+Top
+KorTalos
+Partner Services
+Kor2 Processor
+:: processes
+Seeder AI
+Wheat Link
+Inventory Queen Cloud
+WL Plant
+:: datastores
+Partner DB
+:: both 
+Seeder AI
+Wheat Link
+Inventory Queen Cloud
+WL Plant
 :: level
 Top
 KorTalos

@@ -11,7 +11,7 @@ import { fpng } from "fpng";
 import { Graphviz } from "@hpcc-js/wasm-graphviz";
 
 const graphviz = await Graphviz.load();
-const site = { diagrams: {}, nn: {} };
+const site = { diagrams: {}, nns: {} };
 const ids = new Set();
 const chars = "abcdefghijklmnopqrstuvwxyz0123456789";
 
@@ -42,9 +42,14 @@ function model_to_dots(model) {
         ["narrative","note"]
           .includes(last_command)
       ) {
-        site.nn[`${Object.keys(dots).slice(-1)[0]}.${last_subject.replaceAll(' ', '')}`] =
-        site.nn[`${Object.keys(dots).slice(-1)[0]}.${last_subject.replaceAll(' ', '')}`] || {}
-        site.nn[`${Object.keys(dots).slice(-1)[0]}.${last_subject.replaceAll(' ', '')}`][last_command]=line
+        site.nns[`${Object.keys(dots).slice(-1)[0]}.${last_subject.replaceAll(' ', '')}`] =
+        site.nns[`${Object.keys(dots).slice(-1)[0]}.${last_subject.replaceAll(' ', '')}`] || {}
+        site.nns[`${Object.keys(dots).slice(-1)[0]}.${last_subject.replaceAll(' ', '')}`][last_command]=line
+      }
+      if (last_command=='subclass_of'){
+        site.nns[`${Object.keys(dots).slice(-3,-2)[0]}.${last_subject.replaceAll(' ', '')}`] =
+        site.nns[`${Object.keys(dots).slice(-3,-2)[0]}.${last_subject.replaceAll(' ', '')}`] || {}
+        site.nns[`${Object.keys(dots).slice(-3,-2)[0]}.${last_subject.replaceAll(' ', '')}`][last_command]=line
       }
       if (
         ["processes", "datastores", "transforms", "agents", "locations"]
@@ -53,6 +58,7 @@ function model_to_dots(model) {
         last_subject = line;
       }
   }
+  Deno.writeTextFileSync('r.json',JSON.stringify(site.nns,null,2))
     }
     var row = 0;
     let data_id = 1;
@@ -74,9 +80,9 @@ function model_to_dots(model) {
               ["narrative", "note"]
                 .includes(last_command)
             ) {
-              site.nn[`${level.join('.')}.${last_subject.replaceAll(' ', '')}`] =
-                site.nn[`${level.join('.')}.${last_subject.replaceAll(' ', '')}`] || {}
-              site.nn[`${level.join('.')}.${last_subject.replaceAll(' ', '')}`][last_command] = line
+              site.nns[`${level.join('.')}.${last_subject.replaceAll(' ', '')}`] =
+                site.nns[`${level.join('.')}.${last_subject.replaceAll(' ', '')}`] || {}
+              site.nns[`${level.join('.')}.${last_subject.replaceAll(' ', '')}`][last_command] = line
 
             }
             if (
@@ -101,13 +107,16 @@ function model_to_dots(model) {
                   },
                   num_ids,
                 );
-                let narr=site.nn[`${level.join(".")}.${line.replaceAll(' ','')}`]?.narrative || line
-                let note=site.nn[`${level.join(".")}.${line.replaceAll(' ','')}`]?.note || ''
+                let subclass_of=site.nns[`${level.join(".")}.${line.replaceAll(' ','')}`]?.subclass_of || ''
+                let narr=site.nns[`${level.join(".")}.${line.replaceAll(' ','')}`]?.narrative || line
+                let note=site.nns[`${level.join(".")}.${line.replaceAll(' ','')}`]?.note || ''
+                const sub_href=subclass_of !='' ? `href="#${subclass_of}"` : ''
+                const sub_cl=subclass_of!='' ? ' has_subclass': ''
                 if (note!='') note='note: '+note 
                   const zoom = dots?.[res.dpath] ? "zoomable" : "zoomnotable";
                 const note_attached=(narr==line && note=='') ? "notenotattached" : "noteattached"
                 dots[level.join(".")][line] = zoom == "zoomnotable"
-                  ? `"${line}" [id="${rn()}" tooltip="${narr}\n${note}" color="#33bbee" shape="rectangle" style="rounded" class="${last_command} ${zoom} ${note_attached}" label="${res.path}\n${l_lbl}"]`
+                  ? `"${line}" [id="${rn()}" tooltip="${narr}\n${note}" color="#33bbee" ${sub_href} shape="rectangle" style="rounded" class="${sub_cl}${last_command} ${zoom} ${note_attached}" label="${res.path}\n${l_lbl}"]`
                   : `"${line}" [id="${rn()}" tooltip="${narr}\n${note}" color="#33bbee" href="#${res.dpath}" shape="rectangle" style="rounded" class="${last_command} ${zoom} ${note_attached}" label="${res.path}\n${l_lbl}"]`;
               }
               if ("agents" == last_command) {
