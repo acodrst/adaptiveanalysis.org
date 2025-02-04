@@ -38,6 +38,12 @@ a:hover {
   cursor: pointer;
 }
 
+.has_subclass a:link {
+  text-decoration: none;
+}
+.has_subclass a:hover {
+  text-decoration: underline;
+}
 .zoomable a:link {
   text-decoration: none;
 }

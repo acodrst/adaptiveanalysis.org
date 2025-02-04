@@ -111,7 +111,7 @@ function model_to_dots(model) {
                 let narr=site.nns[`${level.join(".")}.${line.replaceAll(' ','')}`]?.narrative || line
                 let note=site.nns[`${level.join(".")}.${line.replaceAll(' ','')}`]?.note || ''
                 const sub_href=subclass_of !='' ? `href="#${subclass_of}"` : ''
-                const sub_cl=subclass_of!='' ? ' has_subclass': ''
+                const sub_cl=subclass_of!='' ? 'has_subclass ': ''
                 if (note!='') note='note: '+note 
                   const zoom = dots?.[res.dpath] ? "zoomable" : "zoomnotable";
                 const note_attached=(narr==line && note=='') ? "notenotattached" : "noteattached"
