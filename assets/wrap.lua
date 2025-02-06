@@ -1,10 +1,10 @@
 function wrap(el,side)
     s=el.content[1].content[1].attributes.s
 return {
-       pandoc.RawInline('latex',' \\begin{wrapfigure}[]{'..side..'}{0px}'),
+       pandoc.RawInline('latex','\\begin{wrapfigure}[]{'..side..'}{0px}'),
        pandoc.RawInline('latex','\\centering \\includesvg[scale='..s..']{'..el.content[1].content[1].src..'}'),
        pandoc.RawInline('latex','\\caption{'..el.caption.long[1].content[1].text..'}\\label{'..el.identifier..'}'),
-       pandoc.RawInline('latex',' \\end{wrapfigure}')
+       pandoc.RawInline('latex',' \\end{wrapfigure}'),
 }
 end
 

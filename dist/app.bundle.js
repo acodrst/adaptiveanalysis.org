@@ -3264,42 +3264,61 @@ function zoom() {
 }
 
 document.body.insertAdjacentHTML("beforeend", site.page);
-const iframe = document.createElement('iframe');
-iframe.srcdoc = site.viewer.replace("thisistss", t).replace("thisisadler", a).replace("thisislength", g).replace("thisistextlength", tl);
+const iframe = document.createElement("iframe");
+iframe.srcdoc = site.viewer.replace("thisistss", t).replace("thisisadler", a)
+  .replace("thisislength", g).replace("thisistextlength", tl);
 iframe.id = "pdf_frame";
-document.getElementById('pdf').appendChild(iframe);
+document.getElementById("pdf").appendChild(iframe);
 const style = document.createElement("style");
 style.textContent = site.css;
 document.head.appendChild(style);
 function svg_out() {
-  const blob = new Blob([select("#graph svg").node().outerHTML],
-    { type: "text/plain;charset=utf-8" });
+  const svg = select("#graph svg");
+  const bbox = svg.node().getBBox();
+  svg.attr("width", bbox.width + 10).attr("height", bbox.height + 10).attr(
+    "viewBox",
+    `-10 -10 ${bbox.width + 20} ${bbox.height + 20}`,
+  );
+  svg.append("rect")
+    .attr("x", -9)
+    .attr("y", -9)
+    .attr("height", bbox.height + 18)
+    .attr("width", bbox.width + 18)
+    .style("stroke", "white")
+    .style("fill", "none")
+    .style("stroke-width", 1);
+  const blob = new Blob([
+    svg.node().outerHTML,
+  ], { type: "text/plain;charset=utf-8" });
   saveAs(blob, localStorage.getItem("path"));
+  history.back();
 }
 function render(level) {
-  document.getElementById('terms').style.display = "none";
-  document.getElementById('pdf').style.display = "none";
-  document.getElementById('graph').style.display = "block";
-  document.getElementById('path').style.display = "block";
-  document.getElementById('content').style.gridRow = "3";
-  let lev = [];
-  let leva = [];
-  for (let i of level.split(".")) {
+  document.getElementById("terms").style.display = "none";
+  document.getElementById("pdf").style.display = "none";
+  document.getElementById("graph").style.display = "block";
+  document.getElementById("path").style.display = "block";
+  document.getElementById("content").style.gridRow = "3";
+  const lev = [];
+  const leva = [];
+  for (const i of level.split(".")) {
     lev.push(i);
     leva.push(`<a href="#${lev.join(".")}">${i}</a>`);
   }
-  localStorage.setItem("path", `${lev.join('.')}.svg`);
-  document.getElementById("path").innerHTML = `${leva.join(".")} &nbsp; <a href="#export" title="Model">Export SVG</a>`;
+  localStorage.setItem("path", `${lev.join(".")}.svg`);
+  document.getElementById("path").innerHTML = `${
+    leva.join(".")
+  } &nbsp; <a href="#export" title="Model">Export SVG</a>`;
   document.getElementById("graph").innerHTML = site.diagrams[level];
   const gr = select("#graph svg");
-  let zoom$1 = zoom()
+  const zoom$1 = zoom()
     .on("zoom", zoomed);
   function zoomed(e) {
     gr.attr("transform", e.transform);
   }
   select("#graph").call(zoom$1);
   gr.selectAll(".node")
-    .each(function (d) {
+    .each(function () {
       const node = select(this);
       if (node.attr("class").includes("datastores")) {
         const pl = node.selectAll("polyline");
@@ -3342,35 +3361,35 @@ function render(level) {
             .attr("r", "3")
             .attr("stroke", "#0077bb")
             .attr("fill", "#0077bb");
-
         }
       }
     });
 }
-//0077bb
-//globalThis.location.hash = '';
 
 function terms() {
-  document.getElementById('terms').style.display = "block";
-  document.getElementById('pdf').style.display = "none";
-  document.getElementById('graph').style.display = "none";
-  document.getElementById('path').style.display = "none";
-  document.getElementById('content').style.gridRow = "2/4";
+  document.getElementById("terms").style.display = "block";
+  document.getElementById("pdf").style.display = "none";
+  document.getElementById("graph").style.display = "none";
+  document.getElementById("path").style.display = "none";
+  document.getElementById("content").style.gridRow = "2/4";
 }
 function description() {
-  document.getElementById('terms').style.display = "none";
-  document.getElementById('pdf').style.display = "flex";
-  document.getElementById('graph').style.display = "none";
-  document.getElementById('path').style.display = "none";
-  document.getElementById('content').style.gridRow = "2/4";
+  document.getElementById("terms").style.display = "none";
+  document.getElementById("pdf").style.display = "flex";
+  document.getElementById("graph").style.display = "none";
+  document.getElementById("path").style.display = "none";
+  document.getElementById("content").style.gridRow = "2/4";
 }
 refresh();
 function refresh() {
   const hash = globalThis.location.hash.substring(1) || "home";
-  hash == "terms" ? terms()
-    : hash == "export" ? svg_out()
-      : hash in site.diagrams ? render(hash)
-        : description();
+  hash == "terms"
+    ? terms()
+    : hash == "export"
+    ? svg_out()
+    : hash in site.diagrams
+    ? render(hash)
+    : description();
 }
 globalThis.addEventListener("hashchange", () => {
   refresh();

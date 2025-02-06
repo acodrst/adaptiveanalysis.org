@@ -10,6 +10,7 @@ header-includes:
   \usepackage{fancyhdr}
   \usepackage{svg}
   \setsvg{inkscape={"/opt/inkscape"}}
+  \svgsetup{inkscapelatex=false}
   \fancypagestyle{plain}{
     \fancyhf{}
     \renewcommand{\headrulewidth}{0pt}
@@ -90,7 +91,7 @@ abstract:
   \draw [line width=4pt,blue,cap=round] (.7,1.7) -- (1.3,2.2);
   \draw [line width=4pt,blue,cap=round] (1.3,2.2) -- (2.95,.05);
   \end{tikzpicture}
-  \normalsize \noindent   My papers Triple System Analysis ( \tsa) and Adaptive Analysis ( \trs) explain how to use multi-level knowledge graphs for system analysis. A Flow Visualization Practionary ( \ada) uses the combined material/data flow model from \trs\hspace{-3pt}, simplifies the symbols, and shows how to create interactive models and narrative documents like \ada from the ground up.  Review \tsa and \trs before reading further.
+  \normalsize \noindent I demonstrate the practical use of a combined material and data flow model that uses just three main symbols.  This provides a way to vet, analyze, change, and maintain complicated systems.  I show how to create interactive models and narrative documents from the ground up, without relying on external services.
 bibliography: assets/My Library.bib
 geometry:
 - top=.5in
