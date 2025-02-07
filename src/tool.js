@@ -218,7 +218,7 @@ const p_c = [
   "--citeproc",
   "-o",
   "assets/fvp.pdf",
-  "assets/fvp.md",
+  "fvp.md",
   "assets/metadata.yaml",
 ];
 console.log(`running pandoc ${p_c.join(" ")}`);
