@@ -3039,7 +3039,6 @@ function zoom() {
         new ZoomEvent(type, {
           sourceEvent: this.sourceEvent,
           target: zoom,
-          type,
           transform: this.that.__zoom,
           dispatch: listeners
         }),

@@ -19,6 +19,7 @@ header-includes:
   }
 
   \pagestyle{plain}
+  \usepackage{lipsum}
   \usepackage{datetime}
   \newdateformat{monthdayyeardate}{%
   \THEYEAR-\twodigits{\THEMONTH}-\twodigits{\THEDAY}}
@@ -43,13 +44,13 @@ header-includes:
   \posttitle{\vspace{-70pt}}
   \setlength{\droptitle}{-50pt}
   \usepackage{titlesec}
-  \titleformat*{\section}{\bfseries}
-  \titleformat*{\subsection}{\bfseries}
-  \titleformat*{\subsubsection}{\bfseries}
+  \titleformat*{\section}{\centering\Large\bfseries}
+  \titleformat*{\subsection}{\normalsize\bfseries}
+  \titleformat*{\subsubsection}{\itshape\normalsize\bfseries}
   %\titlespacing*{⟨command ⟩}{⟨left⟩}{⟨before-sep⟩}{⟨after-sep⟩}[⟨right-sep⟩]
-  \titlespacing*{\section}{-12pt}{8pt}{1pt}[0pt]
+  \titlespacing*{\section}{0pt}{20pt}{20pt}[0pt]
   \titlespacing*{\subsection}{-12pt}{8pt}{1pt}[0pt]
-  \titlespacing*{\subsubsection}{-12pt}{8pt}{1pt}[0pt]
+  \titlespacing*{\subsubsection}{0pt}{8pt}{1pt}[0pt]
   \posttitle{\par\end{center}\vspace{-70pt}}
   \directlua{luaotfload.add_fallback
    ("emojifallback",
@@ -76,12 +77,16 @@ header-includes:
 title:  A Flow Visualization Practionary
 author: \raisebox{-75pt}{Scott H., System Analyst \hspace{6pt} \raisebox{-2pt}{\href{https://orcid.org/0009-0001-4480-7776}{\includegraphics[width=18pt, height=18pt]{images/oid.eps}}}\vspace{-.4in}}\vspace{-2pt}
 keywords: [knowledge graphs, system design, material flow, data flow, supply chain,human cognition]
-toc: false
+toc: true 
+linestretch: 1 
 date: 
   \monthdayyeardate\today
 link-citations: true
 documentclass: article
+number-sections: true
 fontsize: 12pt
+monofont: LiberationMono-Regular
+monofontoptions: 'Scale=0.64'
 codeBlockCaptions: true
 linkcolor: blue
 abstract:

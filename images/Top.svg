@@ -2,9 +2,9 @@
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 382.05)">
 <polygon fill="white" stroke="none" points="-4,4 -4,-382.05 497.65,-382.05 497.65,4 -4,4"></polygon>
 <!-- KorTalos -->
-<g id="rg1" class="node processes zoomable notenotattached">
+<g id="jvf" class="node processes zoomable notenotattached">
 <title>KorTalos</title>
-<g id="a_rg1"><a xlink:href="#Top.KorTalos" xlink:title="KorTalos
+<g id="a_jvf"><a xlink:href="#Top.KorTalos" xlink:title="KorTalos
 ">
 <path fill="none" stroke="#33bbee" stroke-width="2" d="M293.95,-130.74C293.95,-130.74 247.53,-130.74 247.53,-130.74 241.53,-130.74 235.53,-124.74 235.53,-118.74 235.53,-118.74 235.53,-106.74 235.53,-106.74 235.53,-100.74 241.53,-94.74 247.53,-94.74 247.53,-94.74 293.95,-94.74 293.95,-94.74 299.95,-94.74 305.95,-100.74 305.95,-106.74 305.95,-106.74 305.95,-118.74 305.95,-118.74 305.95,-124.74 299.95,-130.74 293.95,-130.74"></path>
 <text text-anchor="middle" x="270.74" y="-116.94" font-family="Arial" font-size="14.00">0.3</text>
@@ -13,7 +13,7 @@
 </g>
 <line x1="235.52999877929688" y1="-113.74000549316406" x2="305.95001220703125" y2="-113.74000549316406" stroke-dasharray="3,3" stroke="#33bbee" stroke-width="2px"></line><circle cx="236.52999877929688" cy="-129.74000549316406" r="3" stroke="#ee3377" fill="#ee3377"></circle></g>
 <!-- Govern -->
-<g id="azj" class="node agents">
+<g id="u9m" class="node agents">
 <title>Govern</title>
 <polygon fill="none" stroke="#009988" stroke-width="2" points="289.63,-208.51 229.32,-208.51 229.32,-172.51 289.63,-172.51 289.63,-208.51"></polygon>
 <text text-anchor="middle" x="259.47" y="-186.31" font-family="Arial" font-size="14.00">Govern</text>
@@ -26,9 +26,9 @@
 <polygon fill="#bbbbbb" stroke="#bbbbbb" stroke-width="2" points="262.56,-169.17 261.05,-163.9 262.08,-169.04 262.79,-164.15 263.28,-164.23 263.78,-164.3 263.07,-169.18 265.51,-164.55 262.56,-169.17"></polygon>
 </g>
 <!-- Security -->
-<g id="lox" class="node transforms zoomnotable notenotattached">
+<g id="tio" class="node transforms zoomnotable notenotattached">
 <title>Security</title>
-<g id="a_lox"><a xlink:title="Security
+<g id="a_tio"><a xlink:title="Security
 ">
 <path fill="none" stroke="#33bbee" stroke-width="2" d="M375.39,-65.96C375.39,-65.96 334.41,-65.96 334.41,-65.96 328.41,-65.96 322.41,-59.96 322.41,-53.96 322.41,-53.96 322.41,-41.96 322.41,-41.96 322.41,-35.96 328.41,-29.96 334.41,-29.96 334.41,-29.96 375.39,-29.96 375.39,-29.96 381.39,-29.96 387.39,-35.96 387.39,-41.96 387.39,-41.96 387.39,-53.96 387.39,-53.96 387.39,-59.96 381.39,-65.96 375.39,-65.96"></path>
 <text text-anchor="middle" x="354.9" y="-52.16" font-family="Arial" font-size="14.00">0.4</text>
@@ -44,9 +44,9 @@
 <polygon fill="#bbbbbb" stroke="#bbbbbb" stroke-width="2" points="347.49,-69.01 347.8,-74.48 347.94,-69.25 346.17,-73.86 345.7,-73.68 345.23,-73.5 347,-68.89 343.6,-72.87 347.49,-69.01"></polygon>
 </g>
 <!-- Shelter -->
-<g id="rem" class="node transforms zoomnotable notenotattached">
+<g id="p72" class="node transforms zoomnotable notenotattached">
 <title>Shelter</title>
-<g id="a_rem"><a xlink:title="Shelter
+<g id="a_p72"><a xlink:title="Shelter
 ">
 <path fill="none" stroke="#33bbee" stroke-width="2" d="M241.88,-298.83C241.88,-298.83 207.13,-298.83 207.13,-298.83 201.13,-298.83 195.13,-292.83 195.13,-286.83 195.13,-286.83 195.13,-274.83 195.13,-274.83 195.13,-268.83 201.13,-262.83 207.13,-262.83 207.13,-262.83 241.88,-262.83 241.88,-262.83 247.88,-262.83 253.88,-268.83 253.88,-274.83 253.88,-274.83 253.88,-286.83 253.88,-286.83 253.88,-292.83 247.88,-298.83 241.88,-298.83"></path>
 <text text-anchor="middle" x="224.51" y="-285.03" font-family="Arial" font-size="14.00">0.5</text>
@@ -62,9 +62,9 @@
 <polygon fill="#bbbbbb" stroke="#bbbbbb" stroke-width="2" points="232.62,-259.87 232.33,-254.39 232.18,-259.63 233.96,-255.02 234.43,-255.2 234.89,-255.38 233.11,-259.99 236.52,-256.01 232.62,-259.87"></polygon>
 </g>
 <!-- Food -->
-<g id="x2z" class="node transforms zoomable notenotattached">
+<g id="dzd" class="node transforms zoomable notenotattached">
 <title>Food</title>
-<g id="a_x2z"><a xlink:href="#Top.Food" xlink:title="Food
+<g id="a_dzd"><a xlink:href="#Top.Food" xlink:title="Food
 ">
 <path fill="none" stroke="#33bbee" stroke-width="2" d="M172.26,-230.24C172.26,-230.24 142.26,-230.24 142.26,-230.24 136.26,-230.24 130.26,-224.24 130.26,-218.24 130.26,-218.24 130.26,-206.24 130.26,-206.24 130.26,-200.24 136.26,-194.24 142.26,-194.24 142.26,-194.24 172.26,-194.24 172.26,-194.24 178.26,-194.24 184.26,-200.24 184.26,-206.24 184.26,-206.24 184.26,-218.24 184.26,-218.24 184.26,-224.24 178.26,-230.24 172.26,-230.24"></path>
 <text text-anchor="middle" x="157.26" y="-216.44" font-family="Arial" font-size="14.00">0.2</text>
@@ -80,9 +80,9 @@
 <polygon fill="#bbbbbb" stroke="#bbbbbb" stroke-width="2" points="187.35,-205.84 191.78,-202.6 187.31,-205.34 192.14,-204.31 192.24,-204.8 192.35,-205.29 187.52,-206.32 192.71,-207 187.35,-205.84"></polygon>
 </g>
 <!-- Energy -->
-<g id="zq5" class="node transforms zoomnotable notenotattached">
+<g id="sxy" class="node transforms zoomnotable notenotattached">
 <title>Energy</title>
-<g id="a_zq5"><a xlink:title="Energy
+<g id="a_sxy"><a xlink:title="Energy
 ">
 <path fill="none" stroke="#33bbee" stroke-width="2" d="M341.25,-287.84C341.25,-287.84 306.49,-287.84 306.49,-287.84 300.49,-287.84 294.49,-281.84 294.49,-275.84 294.49,-275.84 294.49,-263.84 294.49,-263.84 294.49,-257.84 300.49,-251.84 306.49,-251.84 306.49,-251.84 341.25,-251.84 341.25,-251.84 347.25,-251.84 353.25,-257.84 353.25,-263.84 353.25,-263.84 353.25,-275.84 353.25,-275.84 353.25,-281.84 347.25,-287.84 341.25,-287.84"></path>
 <text text-anchor="middle" x="323.87" y="-274.04" font-family="Arial" font-size="14.00">0.6</text>
@@ -98,9 +98,9 @@
 <polygon fill="#bbbbbb" stroke="#bbbbbb" stroke-width="2" points="306.96,-249.01 302.06,-246.54 306.53,-249.27 303.42,-245.44 303.81,-245.12 304.2,-244.81 307.31,-248.64 305.56,-243.7 306.96,-249.01"></polygon>
 </g>
 <!-- Water -->
-<g id="hz4" class="node transforms zoomnotable notenotattached">
+<g id="mxo" class="node transforms zoomnotable notenotattached">
 <title>Water</title>
-<g id="a_hz4"><a xlink:title="Water
+<g id="a_mxo"><a xlink:title="Water
 ">
 <path fill="none" stroke="#33bbee" stroke-width="2" d="M411.26,-206.5C411.26,-206.5 381.26,-206.5 381.26,-206.5 375.26,-206.5 369.26,-200.5 369.26,-194.5 369.26,-194.5 369.26,-182.5 369.26,-182.5 369.26,-176.5 375.26,-170.5 381.26,-170.5 381.26,-170.5 411.26,-170.5 411.26,-170.5 417.26,-170.5 423.26,-176.5 423.26,-182.5 423.26,-182.5 423.26,-194.5 423.26,-194.5 423.26,-200.5 417.26,-206.5 411.26,-206.5"></path>
 <text text-anchor="middle" x="396.26" y="-192.7" font-family="Arial" font-size="14.00">0.7</text>
@@ -116,9 +116,9 @@
 <polygon fill="#bbbbbb" stroke="#bbbbbb" stroke-width="2" points="366.16,-188.94 361.19,-191.27 366.1,-189.44 361.17,-189.52 361.16,-189.02 361.15,-188.52 366.09,-188.44 361.13,-186.77 366.16,-188.94"></polygon>
 </g>
 <!-- Medical -->
-<g id="j4v" class="node transforms zoomnotable notenotattached">
+<g id="pbz" class="node transforms zoomnotable notenotattached">
 <title>Medical</title>
-<g id="a_j4v"><a xlink:title="Medical
+<g id="a_pbz"><a xlink:title="Medical
 ">
 <path fill="none" stroke="#33bbee" stroke-width="2" d="M189.14,-121.43C189.14,-121.43 150.5,-121.43 150.5,-121.43 144.5,-121.43 138.5,-115.43 138.5,-109.43 138.5,-109.43 138.5,-97.43 138.5,-97.43 138.5,-91.43 144.5,-85.43 150.5,-85.43 150.5,-85.43 189.14,-85.43 189.14,-85.43 195.14,-85.43 201.14,-91.43 201.14,-97.43 201.14,-97.43 201.14,-109.43 201.14,-109.43 201.14,-115.43 195.14,-121.43 189.14,-121.43"></path>
 <text text-anchor="middle" x="169.82" y="-107.63" font-family="Arial" font-size="14.00">0.8</text>
@@ -134,7 +134,7 @@
 <polygon fill="#bbbbbb" stroke="#bbbbbb" stroke-width="2" points="190.99,-123.98 196.14,-125.85 191.38,-123.67 194.92,-127.11 194.57,-127.47 194.22,-127.82 190.68,-124.38 193,-129.08 190.99,-123.98"></polygon>
 </g>
 <!-- Farmland -->
-<g id="mik" class="node locations">
+<g id="jfi" class="node locations">
 <title>Farmland</title>
 <polygon fill="none" stroke="#cc3311" stroke-width="2" points="0,-167.21 0,-203.21 105.83,-203.21 105.83,-167.21 0,-167.21"></polygon>
 <text text-anchor="middle" x="16.15" y="-181.01" font-family="Arial" font-size="14.00">R2</text>
@@ -142,7 +142,7 @@
 <text text-anchor="middle" x="69.06" y="-181.01" font-family="Arial" font-size="14.00">Farmland</text>
 </g>
 <!-- Public -->
-<g id="b13" class="node locations">
+<g id="ydp" class="node locations">
 <title>Public</title>
 <polygon fill="none" stroke="#cc3311" stroke-width="2" points="201.68,-341.55 201.68,-377.55 286.51,-377.55 286.51,-341.55 201.68,-341.55"></polygon>
 <text text-anchor="middle" x="217.83" y="-355.35" font-family="Arial" font-size="14.00">R3</text>
@@ -150,7 +150,7 @@
 <text text-anchor="middle" x="260.24" y="-355.35" font-family="Arial" font-size="14.00">Public</text>
 </g>
 <!-- Generation -->
-<g id="nyz" class="node locations">
+<g id="tit" class="node locations">
 <title>Generation</title>
 <polygon fill="none" stroke="#cc3311" stroke-width="2" points="367.41,-304.9 367.41,-340.9 483.38,-340.9 483.38,-304.9 367.41,-304.9"></polygon>
 <text text-anchor="middle" x="383.56" y="-318.7" font-family="Arial" font-size="14.00">R4</text>
@@ -158,7 +158,7 @@
 <text text-anchor="middle" x="441.54" y="-318.7" font-family="Arial" font-size="14.00">Generation</text>
 </g>
 <!-- Stores -->
-<g id="fcj" class="node locations">
+<g id="vt0" class="node locations">
 <title>Stores</title>
 <polygon fill="none" stroke="#cc3311" stroke-width="2" points="37.23,-309.54 37.23,-345.54 124.39,-345.54 124.39,-309.54 37.23,-309.54"></polygon>
 <text text-anchor="middle" x="53.38" y="-323.34" font-family="Arial" font-size="14.00">R5</text>
@@ -166,7 +166,7 @@
 <text text-anchor="middle" x="96.95" y="-323.34" font-family="Arial" font-size="14.00">Stores</text>
 </g>
 <!-- Supplies -->
-<g id="i3l" class="node locations">
+<g id="yyx" class="node locations">
 <title>Supplies</title>
 <polygon fill="none" stroke="#cc3311" stroke-width="2" points="24.02,-25.43 24.02,-61.43 124.42,-61.43 124.42,-25.43 24.02,-25.43"></polygon>
 <text text-anchor="middle" x="40.17" y="-39.23" font-family="Arial" font-size="14.00">R6</text>
@@ -174,7 +174,7 @@
 <text text-anchor="middle" x="90.37" y="-39.23" font-family="Arial" font-size="14.00">Supplies</text>
 </g>
 <!-- Dams -->
-<g id="mjs" class="node locations">
+<g id="oi1" class="node locations">
 <title>Dams</title>
 <polygon fill="none" stroke="#cc3311" stroke-width="2" points="410.39,-61.47 410.39,-97.47 493.65,-97.47 493.65,-61.47 410.39,-61.47"></polygon>
 <text text-anchor="middle" x="426.54" y="-75.27" font-family="Arial" font-size="14.00">R7</text>
@@ -182,7 +182,7 @@
 <text text-anchor="middle" x="468.17" y="-75.27" font-family="Arial" font-size="14.00">Dams</text>
 </g>
 <!-- Hospitals -->
-<g id="hc5" class="node locations">
+<g id="a4c" class="node locations">
 <title>Hospitals</title>
 <polygon fill="none" stroke="#cc3311" stroke-width="2" points="185.58,-0.5 185.58,-36.5 289.86,-36.5 289.86,-0.5 185.58,-0.5"></polygon>
 <text text-anchor="middle" x="201.73" y="-14.3" font-family="Arial" font-size="14.00">R8</text>
