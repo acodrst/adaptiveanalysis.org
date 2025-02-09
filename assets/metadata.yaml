@@ -96,7 +96,7 @@ abstract:
   \draw [line width=4pt,blue,cap=round] (.7,1.7) -- (1.3,2.2);
   \draw [line width=4pt,blue,cap=round] (1.3,2.2) -- (2.95,.05);
   \end{tikzpicture}
-  \normalsize \noindent I demonstrate the practical use of a combined material and data flow model that uses three symbols to vet, analyze, plan, change, and maintain complicated systems. I show how to create interactive models and narrative documents using these methods from the ground up, without relying on external services.
+  \normalsize \noindent I demonstrate the practical use of a combined material and data flow model that uses three symbols to vet, analyze, plan, change, and maintain complicated systems. I show how to create interactive models and narrative documents using these methods from the ground up, without relying on external services. \color{red} \newline \newline  \small This document is incomplete. I will work on it over time and remove this notice when finished.
 bibliography: assets/My Library.bib
 geometry:
 - top=.5in
