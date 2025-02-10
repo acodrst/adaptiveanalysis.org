@@ -44,7 +44,7 @@ header-includes:
   \usepackage{titlesec}
   \titleformat*{\section}{\centering\Large\bfseries}
   \titleformat*{\subsection}{\normalsize\bfseries}
-  \titleformat*{\subsubsection}{\itshape\normalsize\bfseries}
+  \titleformat*{\subsubsection}{\normalsize\bfseries}
   %\titlespacing*{⟨command ⟩}{⟨left⟩}{⟨before-sep⟩}{⟨after-sep⟩}[⟨right-sep⟩]
   \titlespacing*{\section}{0pt}{20pt}{20pt}[0pt]
   \titlespacing*{\subsection}{-12pt}{8pt}{1pt}[0pt]
