@@ -10,19 +10,6 @@ style.textContent = site.css;
 document.head.appendChild(style);
 function svg_out() {
   const svg = d3.select("#graph svg");
-  const bbox = svg.node().getBBox();
-  svg.attr("width", bbox.width + 10).attr("height", bbox.height + 10).attr(
-    "viewBox",
-    `-10 -10 ${bbox.width + 20} ${bbox.height + 20}`,
-  );
-  svg.append("rect")
-    .attr("x", -9)
-    .attr("y", -9)
-    .attr("height", bbox.height + 18)
-    .attr("width", bbox.width + 18)
-    .style("stroke", "white")
-    .style("fill", "none")
-    .style("stroke-width", 1);
   const blob = new Blob([
     svg.node().outerHTML,
   ], { type: "text/plain;charset=utf-8" });
