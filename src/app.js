@@ -15,7 +15,7 @@ function svg_out() {
     svg.node().outerHTML,
   ], { type: "text/plain;charset=utf-8" });
   saveAs(blob, localStorage.getItem("path"));
-  history.back()
+  history.back();
 }
 function render(level) {
   document.getElementById("terms").style.display = "none";
@@ -104,7 +104,7 @@ function home() {
   document.getElementById("pdf").style.display = "none";
   document.getElementById("graph").style.display = "none";
   document.getElementById("path").style.display = "none";
-  document.getElementById("home").style.display="block";
+  document.getElementById("home").style.display = "block";
   document.getElementById("content").style.gridRow = "2/4";
 }
 function description() {

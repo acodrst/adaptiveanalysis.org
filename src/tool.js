@@ -9,14 +9,12 @@ const tss = dt.toISOString().replaceAll(":", "").replaceAll("-", "").replaceAll(
 import * as base64 from "byte-base64";
 import { fpng } from "fpng";
 import { Graphviz } from "@hpcc-js/wasm-graphviz";
-import { model_to_dots_ii } from 'text-model-dot';
+import { model_to_dots_ii } from "text-model-dot";
 const graphviz = await Graphviz.load();
 const site = { diagrams: {}, nns: {} };
-//const stack = `${Deno.readTextFileSync("assets/model.txt")}\n${Deno.readTextFileSync("assets/dmodel.txt")}`
-//Deno.writeTextFileSync('fullstack.txt', stack)
 const model = Deno.readTextFileSync("assets/model.txt");
 const d_n = model_to_dots_ii(model);
-site.nns=d_n.nns
+site.nns = d_n.nns;
 for (const i in d_n.dots) {
   const dot = `digraph {
  esep=".20" overlap=false splines=true charset="utf-8"
@@ -48,24 +46,24 @@ let p_c = [
 //}).outputSync();
 p_c = [
   "--highlight-style=kate",
- "--embed-resources=false",
- "--filter",
- "pandoc-crossref",
- "--filter",
- "src/filt.js",
- "--citeproc",
- "-s",
- "-o",
- "assets/fvp_head.html",
- "--table-of-contents",
- "-t",
- "html5",
- "fvp.md",
- "assets/metadata.yaml"
+  "--embed-resources=false",
+  "--filter",
+  "pandoc-crossref",
+  "--filter",
+  "src/filt.js",
+  "--citeproc",
+  "-s",
+  "-o",
+  "assets/fvp_head.html",
+  "--table-of-contents",
+  "-t",
+  "html5",
+  "fvp.md",
+  "assets/metadata.yaml",
 ];
 console.log(`running pandoc ${p_c.join(" ")}`);
 new Deno.Command("pandoc", {
- args: p_c,
+  args: p_c,
 }).outputSync();
 p_c = [
   "--highlight-style=kate",
@@ -91,8 +89,10 @@ new Deno.Command("pandoc", {
 site.pdf = Array.from(Deno.readFileSync("assets/fvp.pdf"));
 site.viewer = Deno.readTextFileSync("assets/pdf_page.html");
 site.page = Deno.readTextFileSync("assets/page.html");
-site.html = Deno.readTextFileSync("assets/fvp_head.html").match(/<header id="title-block-header">.+?<h1 id="introduction">/s)[0].slice(32,-22)+
-Deno.readTextFileSync("assets/fvp.html")
+site.html = Deno.readTextFileSync("assets/fvp_head.html").match(
+  /<header id="title-block-header">.+?<h1 id="introduction">/s,
+)[0].slice(32, -22) +
+  Deno.readTextFileSync("assets/fvp.html");
 
 site.css = Deno.readTextFileSync("assets/style.css");
 const st = JSON.stringify(site);

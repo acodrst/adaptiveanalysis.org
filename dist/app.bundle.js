@@ -3367,7 +3367,7 @@ function home() {
   document.getElementById("pdf").style.display = "none";
   document.getElementById("graph").style.display = "none";
   document.getElementById("path").style.display = "none";
-  document.getElementById("home").style.display="block";
+  document.getElementById("home").style.display = "block";
   document.getElementById("content").style.gridRow = "2/4";
 }
 function description() {
