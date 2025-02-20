@@ -23,7 +23,8 @@
     "d3": "^7.9.0",
     "file-saver": "^2.0.5",
     "fpng": "github:acodrst/fpng",
-    "text-model-dot": "github:acodrst/text-model-dot",
-    "pdfjs-dist": "^4.9.155"
+    "pandoc-filter": "^2.2.0",
+    "pdfjs-dist": "^4.9.155",
+    "text-model-dot": "github:acodrst/text-model-dot"
   }
 }

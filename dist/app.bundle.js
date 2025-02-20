@@ -3263,6 +3263,7 @@ function zoom() {
 }
 
 document.body.insertAdjacentHTML("beforeend", site.page);
+document.getElementById("home").insertAdjacentHTML("beforeend", site.html);
 const iframe = document.createElement("iframe");
 iframe.srcdoc = site.viewer.replace("thisistss", t).replace("thisisadler", a)
   .replace("thisislength", g).replace("thisistextlength", tl);
@@ -3282,6 +3283,7 @@ function svg_out() {
 function render(level) {
   document.getElementById("terms").style.display = "none";
   document.getElementById("pdf").style.display = "none";
+  document.getElementById("home").style.display = "none";
   document.getElementById("graph").style.display = "block";
   document.getElementById("path").style.display = "block";
   document.getElementById("content").style.gridRow = "3";
@@ -3357,12 +3359,22 @@ function terms() {
   document.getElementById("pdf").style.display = "none";
   document.getElementById("graph").style.display = "none";
   document.getElementById("path").style.display = "none";
+  document.getElementById("home").style.display = "none";
+  document.getElementById("content").style.gridRow = "2/4";
+}
+function home() {
+  document.getElementById("terms").style.display = "none";
+  document.getElementById("pdf").style.display = "none";
+  document.getElementById("graph").style.display = "none";
+  document.getElementById("path").style.display = "none";
+  document.getElementById("home").style.display="block";
   document.getElementById("content").style.gridRow = "2/4";
 }
 function description() {
   document.getElementById("terms").style.display = "none";
   document.getElementById("pdf").style.display = "flex";
   document.getElementById("graph").style.display = "none";
+  document.getElementById("home").style.display = "none";
   document.getElementById("path").style.display = "none";
   document.getElementById("content").style.gridRow = "2/4";
 }
@@ -3373,9 +3385,11 @@ function refresh() {
     ? terms()
     : hash == "export"
     ? svg_out()
+    : hash == "pdf"
+    ? description()
     : hash in site.diagrams
     ? render(hash)
-    : description();
+    : home();
 }
 globalThis.addEventListener("hashchange", () => {
   refresh();

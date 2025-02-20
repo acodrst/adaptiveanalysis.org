@@ -2,7 +2,7 @@
 
 # Introduction
 
-My two previous papers Triple System Analysis ( \tsa) and Adaptive Analysis ( \trs) explain how to use multi-level knowledge graphs for system analysis [@h_triple_2023] [@h_adaptive_2024]. A Flow Visualization Practionary ( \ada) uses the combined material/data flow model from \trs\hspace{-3pt},  and simplifies the symbols.  The reader will find it helpful to review \tsa and \trs.
+My two previous papers Triple System Analysis ( \tsa) and Adaptive Analysis ( \trs) explain how to use multi-level knowledge graphs for system analysis [@h_triple_2023] [@h_adaptive_2024]. A Flow Visualization Practionary ( \ada) uses the combined material/data flow model from \trs  ,  and simplifies the symbols.  The reader will find it helpful to review \tsa and \trs.
 
 ## Human Cognition First
 
@@ -23,7 +23,7 @@ I spent some time this morning considering the format and my toolchain. The PDF 
 
 # Practionary
 
-![T](images/toptext.svg){#fig:gs s=3.2}
+![T](images/toptext.svg){#fig:gs s=3}
 
 ## Graphs
 
@@ -40,7 +40,7 @@ ut, placerat ac, adipiscing vitae, felis. Curabitur dictum gravida mauris. Nam
 arcu libero, nonummy eget, consectetuer id, vulputate a, magna. Donec vehicula
 augue eu neque. Pellentesque habitant morbi tristique senectus et netus et
 malesuada fames ac turpis egestas. Mauris ut leo. Cras viverra metus rhoncus
-sem. Nulla et lectus vestibulum urna fringilla ultrices. Phasellus eu tellus sit
+sem. Nulla et lectus vestibulum urna fringilla ultrices. [@Fig:gs]  Phasellus eu tellus sit
 amet tortor gravida placerat. Integer sapien est, iaculis in, pretium quis, viverra
 ac, nunc. Praesent eget sem vel leo ultrices bibendum. Aenean faucibus. Morbi
 dolor nulla, malesuada eu, pulvinar at, mollis ac, nulla. Curabitur auctor semper

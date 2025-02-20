@@ -11,4 +11,5 @@ export default [
   input: 'src/tool.js',
   output: { file: 'dist/tool.bundle.js', inlineDynamicImports: true, sourcemap: false },
   plugins: [commonjs(),nodeResolve(), createRollupLicensePlugin({ outputFilename: 'tool_licenses.json' })]
-}]
+}
+]

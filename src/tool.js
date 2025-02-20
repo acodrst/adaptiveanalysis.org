@@ -27,18 +27,59 @@ graph [fontname="Arial"]
   }`;
   site.diagrams[i] = graphviz.neato(dot);
 }
-const p_c = [
+let p_c = [
   "--highlight-style=kate",
   "--pdf-engine=lualatex",
   "--pdf-engine-opt=-shell-escape",
   "--embed-resources=true",
   "--filter",
   "pandoc-crossref",
-  "--lua-filter",
-  "assets/wrap.lua",
+  "--filter",
+  "src/filt.js",
   "--citeproc",
   "-o",
   "assets/fvp.pdf",
+  "fvp.md",
+  "assets/metadata.yaml",
+];
+//console.log(`running pandoc ${p_c.join(" ")}`);
+//new Deno.Command("pandoc", {
+//  args: p_c,
+//}).outputSync();
+p_c = [
+  "--highlight-style=kate",
+ "--embed-resources=false",
+ "--filter",
+ "pandoc-crossref",
+ "--filter",
+ "src/filt.js",
+ "--citeproc",
+ "-s",
+ "-o",
+ "assets/fvp_head.html",
+ "--table-of-contents",
+ "-t",
+ "html5",
+ "fvp.md",
+ "assets/metadata.yaml"
+];
+console.log(`running pandoc ${p_c.join(" ")}`);
+new Deno.Command("pandoc", {
+ args: p_c,
+}).outputSync();
+p_c = [
+  "--highlight-style=kate",
+  "--embed-resources=false",
+  "--filter",
+  "pandoc-crossref",
+  "--filter",
+  "src/filt.js",
+  "--citeproc",
+  "-o",
+  "assets/fvp.html",
+  "--table-of-contents",
+  "-t",
+  "html5",
   "fvp.md",
   "assets/metadata.yaml",
 ];
@@ -46,9 +87,13 @@ console.log(`running pandoc ${p_c.join(" ")}`);
 new Deno.Command("pandoc", {
   args: p_c,
 }).outputSync();
+
 site.pdf = Array.from(Deno.readFileSync("assets/fvp.pdf"));
 site.viewer = Deno.readTextFileSync("assets/pdf_page.html");
 site.page = Deno.readTextFileSync("assets/page.html");
+site.html = Deno.readTextFileSync("assets/fvp_head.html").match(/<header id="title-block-header">.+?<h1 id="introduction">/s)[0].slice(32,-22)+
+Deno.readTextFileSync("assets/fvp.html")
+
 site.css = Deno.readTextFileSync("assets/style.css");
 const st = JSON.stringify(site);
 Deno.writeTextFileSync("site.txt", `let site=${st}\n`);
