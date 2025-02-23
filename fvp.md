@@ -2,26 +2,19 @@
 
 # Introduction
 
-My two previous papers Triple System Analysis ( \tsa) and Adaptive Analysis ( \trs) explain how to use multi-level knowledge graphs for system analysis [@h_triple_2023] [@h_adaptive_2024]. A Flow Visualization Practionary ( \ada) uses the combined material/data flow model from \trs  ,  and simplifies the symbols.  The reader will find it helpful to review \tsa and \trs.
+My two previous papers Triple System Analysis ( \tsa) and Adaptive Analysis ( \trs) explain how to use multi-level knowledge graphs for system analysis [@h_triple_2023] [@h_adaptive_2024].  Flow Visualization ( \ada) simplifies the symbals of the combined material/data flow model of \trs.  Read \tsa, \trs, and  \ada in order.
 
 ## Human Cognition First
 
 ![Top](images/Top.svg){#fig:top s=.63}
 
+We tend to work with systems backwards.  We look at the exhaust data from systems and hope to understand our direction, when we should really be focusing on where we are, where we want to go, and what dangers lie on our route before looking at the currents propelling our boat. Our systems should conform to our needs, not the needs of a provider, framework or existing systems.  There can be some savings in the short-term by going with the flow and purchasing the dominant service; however, when rapid change in requirements and features are needed to adapt to new situations, the technical debt accumulated by not leading with human cognition increases the risk of capsizing in the rapids. 
 
-We tend to work with systems backwards.  We look at the exhaust data from systems and hope to understand our direction, when we should really be focusing on where we are, where we want to go, and what dangers lie on our route before looking at the currents propelling our boat. Our systems should conform to our needs, not the needs of a provider, framework or existing systems.  There can be some savings in the short-term by going with the flow and purchasing the dominant service; however, when rapid change in requirements and features are needed to adapt to new situations, the technical debt accumulated by not leading with human cognition increases the risk of capsizing in the rapids. To get our bearings, humans can consider roughly 3 classes of objects related in one dimension, which can be seen as players, tools, and teams towards a common goal [@tomasello_understanding_2005].  We have limits on how much information we can consider in real-time to make decisions [@zheng_unbearable_2025].  What form of knowledge works best for the thin layer of communication that comprises our conscious mind [@murphy_propofol_2011] [@noauthor_decoding_nodate]?  Semiotics are cognitive shortcuts that can help.  I use icons for \tsa, \trs, and \ada, rather than titles, to make it clear that I mean the idea of the entire paper.   I use other conventions in the model that help the reader understand complex systems without dense dialog.  Charles Peirce developed more sophisticated versions of these ideas, and the title of this paper is an homage to Michael K. Bergman, a follower of his [@bergman_knowledge_2018].   I have had professional success using knowledge graphs and semiotics in the form of Gane and Sarson knowledge graphs [@h_triple_2023] [@gane_structured_1977].  I've spent much time since then trying to understand why it worked so well and developing tools, constraints, and methods that helped with the challenges. [@Fig:top] Shows the set of symbols used in my combined material and data flow model. The rounded blue boxes are transformations of data or materials.  The teal boxes are agents that are the sources or sinks of data or materials.  The reddish-brown boxes store data or materials at rest.  Each symbol is a node that is connected with other nodes, and is called a graph.  Besides color and node shape, dotted lines within the node represent data.  Solid lines represent materials.  As I explained in \trs, data flow diagrams are behind agents that operate transforms.  This is why I think it is OK to mix the nodes, as most of the function is behind the screens, the black box of the device or report that assists the transform. Magenta dots in the corner of a transform/process node mean you can zoom in to it by clicking.  An orange dot means you can hover for notes and narrative.  A blue dot in the lower right corner means there is a connection to the associated full data flow.
+To get our bearings, humans can consider roughly 3 classes of objects related in one dimension, which can be seen as players, tools, and teams towards a common goal [@tomasello_understanding_2005].  We have limits on how much information we can consider in real-time to make decisions [@zheng_unbearable_2025].  What form of knowledge works best for the thin layer of communication that comprises our conscious mind [@murphy_propofol_2011] [@noauthor_decoding_nodate]?  Semiotics are cognitive shortcuts that can help.  I use icons for \tsa, \trs, and \ada, rather than titles, to make it clear that I mean the idea of the entire paper.   I use other conventions in the model to help the reader understand complex systems without dense dialog.  I have had professional success using knowledge graphs and semiotics in the form of Gane and Sarson structured systems analysis [@h_triple_2023] [@gane_structured_1977].  I've spent much of my time since then trying to understand why it worked so well, and developing tools, constraints, and methods that helped with the challenges. 
 
+[@Fig:top] Shows the set of symbols used in my combined material and data flow model. The rounded blue boxes are transformations of data or materials.  The teal boxes are agents that are the sources or sinks of data or materials.  The reddish-brown boxes store data or materials at rest.  Each symbol is a node that is connected with other nodes via an edge.  Combined, this, is called a graph.  Besides color and node shape, dotted lines within the node represent data.  Solid lines represent materials.  As I explained in \trs, data flow diagrams are behind agents that operate transforms.  This is why I think it is OK to mix the nodes, as most of the function is behind the screens, the black box of the device or report that assists the transform. Magenta dots in the corner of a transform/process node mean the node can be expanded by clicking.  An orange dot means that notes and narrative will show with a pointer hover.  A blue dot in the lower right corner means there is a connection to the associated full data flow.
 
-## Third Kiss of the Pig
-This is my third paper.  My dad would say it is my "third kiss of the pig", meaning that this is my last chance at getting the prize.  Since I'm immersed in the idea of triples, calling this my last paper seems appropriate.  There should be three.  Also, for health reasons, I need to back off a bit from my pace.  I've been working on these ideas every waking moment since May, 2019, with the rest of my life shoehorned in.  I need to reverse that.  I still feel very strongly that this is what I can add, something that fits within a mature understanding of progress [@project_development_2024]; however, I need to take a more balanced approach to my life going forward.
-
-I spent some time this morning considering the format and my toolchain. The PDF format is useful, as I can upload it and people can view without additional software.  Even if I just add on to the bottom for each article, no big deal.  The PDF is still available, as is the Markdown.  The document is Pandoc friendly, as it is created with Pandoc, so people can export to whatever format they like.  This is a practionary.  It does not delve in to the ideas of \trs or \tsa.  I think this will work just fine.
-
-\clearpage
-
-
-
-# Practionary
+# Operations
 
 ![T](images/toptext.svg){#fig:gs s=3}
 
@@ -29,9 +22,7 @@ I spent some time this morning considering the format and my toolchain. The PDF 
 
 
 
-### Creating a Graph
-
-
+### Creating a Graph from Stack Graph Format
 
 In \tsa I wrote about the whiteboard technique to gather information collaboratively.  I also wrote about how these ideas can be thought of as mind mapping, and even gave an example of how to export a mind map directly to triples.  \trs introduced graph stack format.  Let's use that to create the graph in [@Fig:top] .
  

@@ -5885,7 +5885,7 @@ q.arrayBuffer().then((a) => {
 
 
 ;// ./web/ui_utils.js
-const DEFAULT_SCALE_VALUE = "page-width";
+const DEFAULT_SCALE_VALUE = "auto";
 const DEFAULT_SCALE = 1.0;
 const DEFAULT_SCALE_DELTA = 1.1;
 const MIN_SCALE = 0.1;
@@ -6567,7 +6567,7 @@ printResolution: {
   kind: OptionKind.VIEWER
 },
 sidebarViewOnLoad: {
-  value: 0,
+  value: 1,
   kind: OptionKind.VIEWER + OptionKind.PREFERENCE
 },
 scrollModeOnLoad: {

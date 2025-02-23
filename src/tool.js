@@ -1,3 +1,4 @@
+
 const emoji = "📉";
 const domain = "adaptiveanalysis.org";
 const backup = Deno.env.get("CL_ADA_BACKUP");
@@ -40,10 +41,10 @@ let p_c = [
   "fvp.md",
   "assets/metadata.yaml",
 ];
-//console.log(`running pandoc ${p_c.join(" ")}`);
-//new Deno.Command("pandoc", {
-//  args: p_c,
-//}).outputSync();
+console.log(`running pandoc ${p_c.join(" ")}`);
+new Deno.Command("pandoc", {
+  args: p_c,
+}).outputSync();
 p_c = [
   "--highlight-style=kate",
   "--embed-resources=false",

