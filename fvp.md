@@ -2,7 +2,7 @@
 
 # Introduction
 
-My two previous papers Triple System Analysis ( \tsa) and Adaptive Analysis ( \trs) explain how to use multi-level knowledge graphs for system analysis [@h_triple_2023] [@h_adaptive_2024].  Flow Visualization ( \ada) simplifies the symbals of the combined material/data flow model of \trs.  Read \tsa, \trs, and  \ada in order.
+My two previous papers Triple System Analysis ( \tsa) and Adaptive Analysis ( \trs) explain how to use multi-level knowledge graphs for system analysis [@h_triple_2023] [@h_adaptive_2024].  Flow Visualization ( \ada) simplifies the symbols of the combined material/data flow model of \trs.  Read \tsa, \trs, and  \ada in order.
 
 ## Human Cognition First
 
@@ -12,20 +12,46 @@ We tend to work with systems backwards.  We look at the exhaust data from system
 
 To get our bearings, humans can consider roughly 3 classes of objects related in one dimension, which can be seen as players, tools, and teams towards a common goal [@tomasello_understanding_2005].  We have limits on how much information we can consider in real-time to make decisions [@zheng_unbearable_2025].  What form of knowledge works best for the thin layer of communication that comprises our conscious mind [@murphy_propofol_2011] [@noauthor_decoding_nodate]?  Semiotics are cognitive shortcuts that can help.  I use icons for \tsa, \trs, and \ada, rather than titles, to make it clear that I mean the idea of the entire paper.   I use other conventions in the model to help the reader understand complex systems without dense dialog.  I have had professional success using knowledge graphs and semiotics in the form of Gane and Sarson structured systems analysis [@h_triple_2023] [@gane_structured_1977].  I've spent much of my time since then trying to understand why it worked so well, and developing tools, constraints, and methods that helped with the challenges. 
 
-[@Fig:top] Shows the set of symbols used in my combined material and data flow model. The rounded blue boxes are transformations of data or materials.  The teal boxes are agents that are the sources or sinks of data or materials.  The reddish-brown boxes store data or materials at rest.  Each symbol is a node that is connected with other nodes via an edge.  Combined, this, is called a graph.  Besides color and node shape, dotted lines within the node represent data.  Solid lines represent materials.  As I explained in \trs, data flow diagrams are behind agents that operate transforms.  This is why I think it is OK to mix the nodes, as most of the function is behind the screens, the black box of the device or report that assists the transform. Magenta dots in the corner of a transform/process node mean the node can be expanded by clicking.  An orange dot means that notes and narrative will show with a pointer hover.  A blue dot in the lower right corner means there is a connection to the associated full data flow.
+[@Fig:top] Shows the set of symbols used in my combined material and data flow model. The rounded blue boxes are transformations of data or materials.  The teal boxes are agents that are the sources or sinks of data or materials.  The reddish-brown boxes store data or materials at rest.  Each symbol is a node that is connected with other nodes via an edge.  Combined, this is called a graph.  Besides color and node shape, dotted lines within the node represent data.  Solid lines represent materials.  As I explained in \trs, data flow diagrams are behind agents that operate transforms.  This is why I think it is OK to mix the nodes, as most of the function is behind the screens, the black box of the device or report that assists the transform. Magenta dots in the corner of a transform/process node mean the node can be expanded by clicking.  An orange dot means that notes and narrative will show with a pointer hover.  A blue dot in the lower right corner means there is a connection to the associated full data flow.
 
 # Operations
 
 ![T](images/toptext.svg){#fig:gs s=3}
 
+Most of \ada is operational rather than design or philosophy.   I show how to build and run the systems I describe in \trs and \tsa, and will fill in the missing gaps.
+
 ## Graphs
-
-
 
 ### Creating a Graph from Stack Graph Format
 
-In \tsa I wrote about the whiteboard technique to gather information collaboratively.  I also wrote about how these ideas can be thought of as mind mapping, and even gave an example of how to export a mind map directly to triples.  \trs introduced graph stack format.  Let's use that to create the graph in [@Fig:top] .
+In \tsa I wrote about the whiteboard technique to gather information collaboratively.  I also wrote about how these ideas can be thought of as mind mapping, and even gave an example of how to export a mind map directly to triples.  \trs introduced graph stack format.  Let's use that to create the graph in [@Fig:top] . Copy  [@Fig:gs] to a text file or download from the \ada repository [@h_ada_top_nodate].  Next, we need to install software that will convert the text model to a standard graph format.  I'm going to assume that you can use NPM, or, at least can bribe a programmer with a beverage to help you.  We will continue to build out more sophisticated features, but for now, create a blank directory and add a file called package.json in it that contains this:
+
+```{#lst:npm_start .json .numberLines}
+{
+  "name": "gen-graph",
+  "dependencies": {
+    "text-model-dot": "github:acodrst/text-model-dot"
+  }
+}
+```
+ The numbers to the left are simply line numbers, not something you need to enter.  It is also possible to go directly to the repository on GitHub and download the software, but getting used to NPM will help us later on.  Now, install text-model-dot:
  
+``` {#lst:install_text_model .text .numberLines}
+npm i
+added 1 package, and audited 2 packages in 1s
+found 0 vulnerabilities
+```
+We now have a new directory called nod_modules which contains the software:
+
+``` {#lst:list_software .text .numberLines}
+ $ ls
+node_modules  package-lock.json  package.json
+$ ls node_modules
+text-model-dot
+$ ls node_modules/text-model-dot
+LICENSE  README.md  package.json  text-model-dot.js
+```
+
 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit, vestibulum
 ut, placerat ac, adipiscing vitae, felis. Curabitur dictum gravida mauris. Nam
 arcu libero, nonummy eget, consectetuer id, vulputate a, magna. Donec vehicula
