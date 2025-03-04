@@ -1,4 +1,3 @@
-
 const emoji = "📉";
 const domain = "adaptiveanalysis.org";
 const backup = Deno.env.get("CL_ADA_BACKUP");
@@ -9,25 +8,9 @@ const tss = dt.toISOString().replaceAll(":", "").replaceAll("-", "").replaceAll(
 );
 import * as base64 from "byte-base64";
 import { fpng } from "fpng";
-import { Graphviz } from "@hpcc-js/wasm-graphviz";
-import { model_to_dots_ii } from "text-model-dot";
-const graphviz = await Graphviz.load();
-const site = { diagrams: {}, nns: {} };
-const model = Deno.readTextFileSync("assets/model.txt");
-const d_n = model_to_dots_ii(model);
-site.nns = d_n.nns;
-for (const i in d_n.dots) {
-  const dot = `digraph {
- esep=".20" overlap=false splines=true charset="utf-8"
-graph [fontname="Arial"]
- edge [penwidth="2" arrowsize="0.5" arrowtail="vee" arrowhead="vee" color="#bbbbbb" fontname="Arial"]
-  node [penwidth="2" margin=".1,0" fontname="Arial"]
-  ${Object.values(d_n.dots[i]).join("\n")}\n
-  }`;
-  site.diagrams[i] = graphviz.neato(dot);
-}
+const site = {};
 let p_c = [
-  "--highlight-style=kate",
+  "--highlight-style=tango",
   "--pdf-engine=lualatex",
   "--pdf-engine-opt=-shell-escape",
   "--embed-resources=true",
@@ -37,8 +20,8 @@ let p_c = [
   "src/filt.js",
   "--citeproc",
   "-o",
-  "assets/fvp.pdf",
-  "fvp.md",
+  "assets/lmp.pdf",
+  "lmp.md",
   "assets/metadata.yaml",
 ];
 console.log(`running pandoc ${p_c.join(" ")}`);
@@ -46,7 +29,7 @@ new Deno.Command("pandoc", {
   args: p_c,
 }).outputSync();
 p_c = [
-  "--highlight-style=kate",
+  "--highlight-style=tango",
   "--embed-resources=false",
   "--filter",
   "pandoc-crossref",
@@ -55,11 +38,11 @@ p_c = [
   "--citeproc",
   "-s",
   "-o",
-  "assets/fvp_head.html",
+  "assets/lmp_head.html",
   "--table-of-contents",
   "-t",
   "html5",
-  "fvp.md",
+  "lmp.md",
   "assets/metadata.yaml",
 ];
 console.log(`running pandoc ${p_c.join(" ")}`);
@@ -67,7 +50,7 @@ new Deno.Command("pandoc", {
   args: p_c,
 }).outputSync();
 p_c = [
-  "--highlight-style=kate",
+  "--highlight-style=tango",
   "--embed-resources=false",
   "--filter",
   "pandoc-crossref",
@@ -75,11 +58,11 @@ p_c = [
   "src/filt.js",
   "--citeproc",
   "-o",
-  "assets/fvp.html",
+  "assets/lmp.html",
   "--table-of-contents",
   "-t",
   "html5",
-  "fvp.md",
+  "lmp.md",
   "assets/metadata.yaml",
 ];
 console.log(`running pandoc ${p_c.join(" ")}`);
@@ -87,13 +70,14 @@ new Deno.Command("pandoc", {
   args: p_c,
 }).outputSync();
 
-site.pdf = Array.from(Deno.readFileSync("assets/fvp.pdf"));
+site.model =Deno.readTextFileSync('./node_modules/text-model-dot/example.txt')
+site.pdf = Array.from(Deno.readFileSync("assets/lmp.pdf"));
 site.viewer = Deno.readTextFileSync("assets/pdf_page.html");
 site.page = Deno.readTextFileSync("assets/page.html");
-site.html = Deno.readTextFileSync("assets/fvp_head.html").match(
+site.html = Deno.readTextFileSync("assets/lmp_head.html").match(
   /<header id="title-block-header">.+?<h1 id="introduction">/s,
 )[0].slice(32, -22) +
-  Deno.readTextFileSync("assets/fvp.html");
+  Deno.readTextFileSync("assets/lmp.html");
 
 site.css = Deno.readTextFileSync("assets/style.css");
 const st = JSON.stringify(site);

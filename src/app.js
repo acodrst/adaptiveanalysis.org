@@ -1,4 +1,5 @@
-import * as d3 from "d3";
+import { model_to_dots } from "text-model-dot"
+import { gsdot_svg } from "gsdot-svg"
 document.body.insertAdjacentHTML("beforeend", site.page);
 document.getElementById("home").insertAdjacentHTML("beforeend", site.html);
 const iframe = document.createElement("iframe");
@@ -10,14 +11,13 @@ const style = document.createElement("style");
 style.textContent = site.css;
 document.head.appendChild(style);
 function svg_out() {
-  const svg = d3.select("#graph svg");
   const blob = new Blob([
-    svg.node().outerHTML,
+    localStorage.getItem('svg_content'),
   ], { type: "text/plain;charset=utf-8" });
   saveAs(blob, localStorage.getItem("path"));
   history.back();
 }
-function render(level) {
+async function render(level) {
   document.getElementById("terms").style.display = "none";
   document.getElementById("pdf").style.display = "none";
   document.getElementById("home").style.display = "none";
@@ -34,61 +34,7 @@ function render(level) {
   document.getElementById("path").innerHTML = `${
     leva.join(".")
   } &nbsp; <a href="#export" title="Model">Export SVG</a>`;
-  document.getElementById("graph").innerHTML = site.diagrams[level];
-  const gr = d3.select("#graph svg");
-  const zoom = d3.zoom()
-    .on("zoom", zoomed);
-  function zoomed(e) {
-    gr.attr("transform", e.transform);
-  }
-  d3.select("#graph").call(zoom);
-  gr.selectAll(".node")
-    .each(function () {
-      const node = d3.select(this);
-      if (node.attr("class").includes("datastores")) {
-        const pl = node.selectAll("polyline");
-        pl.attr("stroke-dasharray", "3,3");
-      }
-      if (
-        node.attr("class").includes("transform") ||
-        node.attr("class").includes("process")
-      ) {
-        const bbox = node.node().getBBox();
-        bar = node.attr("class").includes("transform") ? "3,0" : "3,3";
-        node.append("line")
-          .attr("x1", bbox.x)
-          .attr("y1", bbox.y + 17)
-          .attr("x2", bbox.x + bbox.width)
-          .attr("y2", bbox.y + 17)
-          .attr("stroke-dasharray", bar)
-          .attr("stroke", "#33bbee")
-          .attr("stroke-width", "2px");
-        if (node.attr("class").includes("zoomable")) {
-          node.append("circle")
-            .attr("cx", bbox.x + 1)
-            .attr("cy", bbox.y + 1)
-            .attr("r", "3")
-            .attr("stroke", "#ee3377")
-            .attr("fill", "#ee3377");
-        }
-        if (node.attr("class").includes("noteattached")) {
-          node.append("circle")
-            .attr("cx", bbox.x + bbox.width - 1)
-            .attr("cy", bbox.y + 1)
-            .attr("r", "3")
-            .attr("stroke", "#ee7733")
-            .attr("fill", "#ee7733");
-        }
-        if (node.attr("class").includes("has_subclass")) {
-          node.append("circle")
-            .attr("cx", bbox.x + bbox.width - 1)
-            .attr("cy", bbox.y + bbox.height - 1)
-            .attr("r", "3")
-            .attr("stroke", "#0077bb")
-            .attr("fill", "#0077bb");
-        }
-      }
-    });
+  localStorage.setItem('svg_content', await gsdot_svg(model_to_dots(site.model).dots[level],'default','graph'));
 }
 
 function terms() {
@@ -124,7 +70,7 @@ function refresh() {
     ? svg_out()
     : hash == "pdf"
     ? description()
-    : hash in site.diagrams
+    : hash.includes('Top')
     ? render(hash)
     : home();
 }

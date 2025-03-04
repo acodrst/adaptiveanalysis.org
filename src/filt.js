@@ -124,6 +124,7 @@ for (const b in input.blocks) {
   if (input.blocks[b].t == "Figure") {
     const fig_img = input.blocks[b].c[2][0].c[0].c[2][0].split("images/")[1];
     const s = input.blocks[b].c[2][0].c[0].c[0][2][0][1];
+    const a = input.blocks[b].c[2][0].c[0].c[0][2][1][1];
     const fig_txt = Deno.readTextFileSync(`images/${fig_img}`);
     const label = input.blocks[b].c[0][0];
     const w = fig_txt.match(/width="\d*\.*?\d*pt"/s)[0].slice(7, -3) * s;
@@ -131,15 +132,18 @@ for (const b in input.blocks) {
     const l = Math.floor(h / 96 / .14 + 3);
 
     if (format == "latex") {
+      if (a!='n'){
+      const align=a=="r"?"o":"i"
       const caption = input.blocks[b].c[2][0].c[0].c[1][0].c;
       input.blocks[b] = {
         "t": "RawBlock",
         "c": [
           "tex",
-          `\\begin{wrapfigure}[${l}]{'o'}{0px}\\centering
+          `\\begin{wrapfigure}[${l}]{${align}}{0px}\\centering
           \\includesvg[scale=${s}]{images/${fig_img}}\\caption{${caption}}\\label{${label}}\\end{wrapfigure}`,
         ],
       };
+    }
     }
     if (format == "html5") {
       const fig_num = input.blocks[b].c[2][0].c[0].c[1][2].c;

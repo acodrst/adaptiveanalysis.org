@@ -40,13 +40,12 @@ header-includes:
   \fancyfootoffset{.20in}
   \DefineVerbatimEnvironment{Highlighting}{Verbatim}{breaklines,commandchars=\\\{\}}
   \usepackage{titling}
-  \setlength{\droptitle}{180pt}
+  \setlength{\droptitle}{-60pt}
   \usepackage{titlesec}
-  \titleformat*{\section}{\centering\Large\bfseries}
+  \titleformat*{\section}{\normalsize\bfseries}
   \titleformat*{\subsection}{\normalsize\bfseries}
   \titleformat*{\subsubsection}{\normalsize\bfseries}
-  %\titlespacing*{⟨command ⟩}{⟨left⟩}{⟨before-sep⟩}{⟨after-sep⟩}[⟨right-sep⟩]
-  \titlespacing*{\section}{0pt}{20pt}{20pt}[0pt]
+  \titlespacing*{\section}{-12pt}{8pt}{1pt}[0pt]
   \titlespacing*{\subsection}{-12pt}{8pt}{1pt}[0pt]
   \titlespacing*{\subsubsection}{0pt}{8pt}{1pt}[0pt]
   \posttitle{\par\end{center}\vspace{-70pt}}
@@ -68,16 +67,15 @@ header-includes:
   \usegdlibrary{force} 
   \tikzstyle{arrow}=[line width=1pt, ->, >=latex ]
   \tikzstyle{vertex}=[draw,circle,minimum size=14pt]
-  \newcommand{\ada}{\href{https://adaptiveanalysis.org}{\hspace{12pt}\begin{tikzpicture}[transform canvas={scale=.14,xshift=-90pt,yshift=-13pt}]\draw[step=1,gray,line width=.5pt] grid (3,3);\draw[line width=10pt,blue,cap=round](.05,2.95) -- (.7,1.7);\draw [line width=10pt,blue,cap=round] (.7,1.7) -- (1.3,2.2);\draw [line width=10pt,blue,cap=round] (1.3,2.2) -- (2.95,.05);\end{tikzpicture}\hspace{2px}}}
+  \newcommand{\ada}{\href{https://adaptiveanalysis.org}{\hspace{14pt}\begin{tikzpicture}[transform canvas={scale=.14,xshift=-90pt,yshift=-13pt}]\draw[step=1,gray,line width=.5pt] grid (3,3);\draw[line width=10pt,blue,cap=round](.05,2.95) -- (.7,1.7);\draw [line width=10pt,blue,cap=round] (.7,1.7) -- (1.3,2.2);\draw [line width=10pt,blue,cap=round] (1.3,2.2) -- (2.95,.05);\end{tikzpicture}\hspace{2px}}}
   \newcommand{\tsa}{\href{https://doi.org/10.5281/zenodo.7826793}{\textbf{\textcolor{left}3\kern-.3ex\raisebox{-.48ex}{\textcolor{middle}{S}}\kern-.15ex\textcolor{teal}{A}}}\hspace{2px}} 
   \newcommand{\trs}{\href{https://doi.org/10.5281/zenodo.13684896}{\hspace{16pt}\begin{tikzpicture}[simple necklace layout,transform canvas={scale=.4,rotate=-60,xshift=-22pt,yshift=2pt}]\node(1)[vertex,orange,fill=orange]{};\node(0)[vertex,teal,fill=teal]{};\node(2)[vertex,magenta,fill=magenta]{};\path(0)edge[arrow](1);\path(1)edge[arrow](2);\path (2)edge[arrow](0);\end{tikzpicture}}\hspace{2px}}
   ```
 author: Scott H., System Analyst
-title:  Flow Visualization
-toc-title: Contents
+title: Logical Map How-to Guide 
 abstract-title: Overview 
 keywords: [knowledge graphs, system design, material flow, data flow, supply chain,human cognition]
-toc: true 
+toc: false 
 linestretch: 1 
 date: 
   \monthdayyeardate\today
@@ -89,7 +87,7 @@ monofont: LiberationMono-Regular
 monofontoptions: Scale=0.64
 codeBlockCaptions: true
 linkcolor: blue
-abstract: \noindent I demonstrate the use of a combined material and data flow model that uses three symbols to vet, analyze, plan, change, and maintain complicated systems. I show how to create interactive models and narrative documents using these methods from the ground up, without relying on external services. \color{red} \newline \newline  \small <p style="color:red;"><b> This document is incomplete. I will work on it over time and remove this notice when finished.\thispagestyle{empty} </b> \clearpage
+abstract: \noindent \normalsize As we face quickly changing systems, knowing how to create a logical map is critical.  There are many existing tools that help with this. I distill down to the quickest and most effective methods, combining material and data flow with just three symbol classes and two types.\vspace{-211pt} \color{red} \small <p style="color:red;"><b> This document is incomplete. I will work on it over time and remove this notice when finished.\vspace{180pt} \thispagestyle{empty} </b> 
 bibliography: assets/My Library.bib
 geometry:
 - top=.5in
