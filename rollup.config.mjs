@@ -5,7 +5,7 @@ export default [
 {
   input: 'src/app.js',
   output: { file: 'dist/app.bundle.js', inlineDynamicImports: true, sourcemap: false },
-  plugins: [nodeResolve(), createRollupLicensePlugin({ outputFilename: 'app_licenses.json' })]
+  plugins: [commonjs(),nodeResolve(), createRollupLicensePlugin({ outputFilename: 'app_licenses.json' })]
 },
 {
   input: 'src/tool.js',

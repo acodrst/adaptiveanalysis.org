@@ -5,21 +5,17 @@
     <meta name="description"
       content="How to create a logical map for combined material and data flow using three symbols">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta property="og:site_name" content="Logical Map How-to Guide">
-    <meta property="og:url" content="https://adaptiveanalysis.org">
-    <meta property="og:image" content="https://adaptiveanalysis.org/images/tfp.png">
     <title>Logical Map How-to Guide</title>
   </head>
 <body>
-  <script src="FileSaver.min.js"> </script> 
   <script src="fzstd.min.js"> </script>
   <script src="fflate.min.js"></script>
   <script>
-  const t="20250308T062946681Z",
-      a="d796b3a2",
-      g = "885107",
-      tl="1268350";
-  fetch("20250308T062946681Z-d796b3a2.png").then((q) => {
+  const t="20250310T133549676Z",
+      a="7f2e5bad",
+      g = "892100",
+      tl="1285209";
+  fetch("20250310T133549676Z-7f2e5bad.png").then((q) => {
   q.arrayBuffer().then((a) => {
     let l = fflate.unzlibSync(new Uint8Array(a.slice(41, -16))),
       f = 0,
@@ -37,7 +33,7 @@
         p++;
       }
     } while (f < l.length);
-    let z = fzstd.decompress(u.slice(7 * 1024, 7 * 1024 + 885107)),
+    let z = fzstd.decompress(u.slice(7 * 1024, 7 * 1024 + 892100)),
       s = document.createElement("script");
     s.appendChild(document.createTextNode(new TextDecoder().decode(z)));
     document.body.appendChild(s);

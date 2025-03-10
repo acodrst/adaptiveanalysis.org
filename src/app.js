@@ -1,5 +1,6 @@
 import { model_to_dots } from "text-model-dot"
 import { gsdot_svg } from "gsdot-svg"
+import { saveAs } from "file-saver"
 document.body.insertAdjacentHTML("beforeend", site.page);
 document.getElementById("home").insertAdjacentHTML("beforeend", site.html);
 const iframe = document.createElement("iframe");

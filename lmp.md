@@ -58,6 +58,29 @@ Browse to   http://127.0.0.1:8080, and you'll see a graph like [@Fig:top].
 
 \clearpage
 
+# Toolkit
+
+A large part of Logical Map is being able to create complex maps without external services.  This section will show how to install and run tools and documentation to create maps as well as integrate the maps quickly into web browser and PDF documents, just like what you are reading now.   
+
+## Local Documentation
+
+The map is generated via JavaScript, CSS, and HTML.  Spin off a project right now to understand how to run documentation locally.  This can be done by running a local version of MDN Web Docs [@noauthor_mdn_nodate].  As of this writing (2025-03-09), the way I do it is I fork content and yari as parallel repositories.  (Note that there are some instructions that say to install yari as a subdirectory of content).  Then run:
+
+```{#lst:yari .text .numberLines}
+yarn install
+yarn dev
+```
+To update later, change to the local repository and run:
+```{#lst:yari .text .numberLines}
+git pull origin main
+yarn
+yarn dev
+```
+Going forward, just use ```yarn start```.  Browse to http://localhost:3000 to see a local MDN.  Test by disconnecting from the Internet.
+
+\clearpage
+
+
 # References
 
 <div id="refs"></div>

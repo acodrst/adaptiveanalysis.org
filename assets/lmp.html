@@ -357,6 +357,35 @@ class="sourceCode numberSource text numberLines"><code class="sourceCode"><span 
 <span id="lst:list_software-18"><a href="#lst:list_software-18"></a>Hit CTRL-C to stop the server</span></code></pre></div>
 <p>Browse to http://127.0.0.1:8080, and you’ll see a graph like
 Fig. 1.</p>
+<h1 id="toolkit">Toolkit</h1>
+<p>A large part of Logical Map is being able to create complex maps
+without external services. This section will show how to install and run
+tools and documentation to create maps as well as integrate the maps
+quickly into web browser and PDF documents, just like what you are
+reading now.</p>
+<h2 id="local-documentation">Local Documentation</h2>
+<p>The map is generated via JavaScript, CSS, and HTML. Spin off a
+project right now to understand how to run documentation locally. This
+can be done by running a local version of MDN Web Docs <span
+class="citation" data-cites="noauthor_mdn_nodate">(<a
+href="#ref-noauthor_mdn_nodate"
+role="doc-biblioref"><span>“<span>MDN</span> Web Docs”</span>
+n.d.</a>)</span> <a href="https://developer.mozilla.org/en-US/"
+title="{MDN"><svg class="link_icon" width="57.259mm" height="60.469mm" version="1.1" viewBox="0 0 57.259 60.469" xmlns="http://www.w3.org/2000/svg"><defs><marker id="Triangle" overflow="visible" markerHeight="1" markerWidth="1" orient="auto-start-reverse" preserveAspectRatio="xMidYMid" viewBox="0 0 1 1"><path transform="scale(.5)" d="m5.77 0-8.65 5v-10z" fill="context-stroke" fill-rule="evenodd" stroke="context-stroke" stroke-width="1pt"/></marker></defs><g transform="translate(-79.374 -82.221)"><rect x="81.358" y="97.581" width="36.375" height="43.125" fill="none" stroke="#07b" stroke-linecap="square" stroke-linejoin="round" stroke-width="3.9688"/><rect x="97.947" y="96.621" width="21.276" height="26.049" fill="#fff" stroke="#fff" stroke-linecap="square" stroke-width="4.1186"/><path d="m90.962 127.73 33.026-32.908" fill="none" marker-end="url(#Triangle)" stroke="#07b" stroke-width="5.0271"/></g></svg></a>.
+As of this writing (2025-03-09), the way I do it is I fork content and
+yari as parallel repositories. (Note that there are some instructions
+that say to install yari as a subdirectory of content). Then run:</p>
+<div class="sourceCode" id="lst:yari"><pre
+class="sourceCode numberSource text numberLines"><code class="sourceCode"><span id="lst:yari-1"><a href="#lst:yari-1"></a>yarn install</span>
+<span id="lst:yari-2"><a href="#lst:yari-2"></a>yarn dev</span></code></pre></div>
+<p>To update later, change to the local repository and run:</p>
+<div class="sourceCode" id="lst:yari"><pre
+class="sourceCode numberSource text numberLines"><code class="sourceCode"><span id="lst:yari-1"><a href="#lst:yari-1"></a>git pull origin main</span>
+<span id="lst:yari-2"><a href="#lst:yari-2"></a>yarn</span>
+<span id="lst:yari-3"><a href="#lst:yari-3"></a>yarn dev</span></code></pre></div>
+<p>Going forward, just use <code>yarn start</code>. Browse to
+http://localhost:3000 to see a local MDN. Test by disconnecting from the
+Internet.</p>
 <h1 id="references">References</h1>
 <div id="refs" class="references csl-bib-body hanging-indent"
 data-entry-spacing="0" role="list">
@@ -378,6 +407,11 @@ href="https://doi.org/10.5281/ZENODO.13684896">https://doi.org/10.5281/ZENODO.13
 role="listitem">
 ———. 2025. <span>“Acodrst/Text-Model-Dot.”</span> <a
 href="https://github.com/acodrst/text-model-dot">https://github.com/acodrst/text-model-dot</a>.
+</div>
+<div id="ref-noauthor_mdn_nodate" class="csl-entry" role="listitem">
+<span>“<span>MDN</span> Web Docs.”</span> n.d. Accessed March 9, 2025.
+<a
+href="https://developer.mozilla.org/en-US/">https://developer.mozilla.org/en-US/</a>.
 </div>
 <div id="ref-noauthor_nodejs_nodate" class="csl-entry" role="listitem">
 <span>“Node.js — an Introduction to the Npm Package Manager.”</span>
