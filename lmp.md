@@ -1,14 +1,16 @@
 # Introduction
 
-A logical map makes sense of related concepts by limiting the visualization to necessary functional elements.  Triple System Analysis ( \tsa) and Adaptive Analysis ( \trs) explain how to use multi-level maps to understand systems [@h_triple_2023] [@h_adaptive_2024].  This how-to guide (\ada)  builds on those ideas, but is limits the domain to materials and data, which are core aspects of concern.  Data might live on paper, a computer hard disk, as memories of childhood, or shared cultural forms in our dreams [@samson_evidence_2023].  Data flows in our daily lives as we run reports, write in our diary, account for money, message our friends, maintain contacts, and many other things that rely on other services to process and store our data.  Those services rely on others.  Restaurants often require data flow to accept customers, as orders  and payment are handled by external services.  When there is a network interruption, business grinds to a halt.  Supply chains of production and distribution of materials like eggs, steel, mobile phones or lettuce can also cause significant disruption when interrupted.  Creating a map of these flows prior to failure can help recovery.  Often it is cost-prohibitive to map all possible flows prior to failure; however, the methods describe by this paper our intended to be quick enough to use at time of failure.  Data flow maps were introduced in the 1970s to analyze complicated data processing, and were proven to be an effective cognitive aid  [@gane_structured_1977].   [@Fig:top] is an example map that uses adopts the symbols and conventions
+A logical map makes sense of related concepts by limiting the visualization to necessary functional elements.  Triple System Analysis ( \tsa) and Adaptive Analysis ( \trs) explain how to use multi-level maps to understand systems [@h_triple_2023] [@h_adaptive_2024].  This how-to guide (\ada)  builds on those ideas, but limits the flow model to materials and data.  Data might live on paper, a computer hard disk, as memories of childhood, or shared cultural forms in our dreams [@samson_evidence_2023].  Data flows in our daily lives as we run reports, write in our diary, account for money, message our friends, maintain contacts, and many other things that rely on other services to process and store our data.  Those services rely on others.  Restaurants often require data flow to accept customers, as orders  and payment are handled by external services.  When there is a network interruption, business grinds to a halt.  Supply chains of production and distribution of materials like eggs, steel, mobile phones or lettuce can also cause significant disruption when interrupted.  Creating a map of these flows prior to failure can help recovery.  Often it is cost-prohibitive to map all possible flows prior to failure; however, the methods describe by this paper our intended to be quick enough to use at time of failure.  Data flow maps were introduced in the 1970s to analyze complicated data processing, and were proven to be an effective cognitive aid  [@gane_structured_1977].   [@Fig:top] is an example map that uses adopts the symbols and conventions
 
 ![Top](images/Top.svg){#fig:top s=.63 a=r}
 
 The rounded rectangle blue nodes are transformations.  The teal rectangle nodes are agents that are the sources or sinks of data or intelligence.  The reddish-brown nodes store data or materials at rest.  Dotted lines within the node represent data.  Solid lines represent materials.  As I explained in \trs, data flow diagrams are behind agents that operate transforms.  This is why I think it is OK to mix the nodes, as most of the function is behind the screens, the black box of the device or report that assists the transform. Magenta dots in the corner of a transform/process node mean the node can be expanded by clicking.  An orange dot means that notes and narrative will show with a pointer hover.  A blue dot in the lower right corner of a material transform means there is a connection to the associated full data flow.
 
-# Creating a Map
+\clearpage
 
- \trs introduced the graph stack format.  Let's use that to create the graph in [@Fig:top] .  We need to install software that will convert the text model to a standard graph format.  I'm going to assume that you can use NPM, or, at least can bribe a programmer with a beverage and food to help you [@noauthor_nodejs_nodate].  We will continue to build out more sophisticated features, but for now, create a blank directory, cd into it, and install text-model-dot, gsdot-svg, and http-server with NPM:
+# Map Presentations
+## Simple Web
+ Let's start with the graph stack format introduced in \trs to create the graph in [@Fig:top]. I'm going to assume that you can use NPM, or, at least can bribe a programmer with a beverage and food to help you [@noauthor_nodejs_nodate].  We will continue to build out more sophisticated features, but for now, create a blank directory, cd into it, and install text-model-dot, gsdot-svg, and http-server with NPM:
 
 ``` {#lst:first_graph  .txt .numberLines}
 $ npm install text-model-dot gsdot-svg http-server
@@ -58,9 +60,7 @@ Browse to   http://127.0.0.1:8080, and you'll see a graph like [@Fig:top].
 
 \clearpage
 
-# Toolkit
-
-A large part of Logical Map is being able to create complex maps without external services.  This section will show how to install and run tools and documentation to create maps as well as integrate the maps quickly into web browser and PDF documents, just like what you are reading now.   
+# Road Trip Toolkit
 
 ## Local Documentation
 
