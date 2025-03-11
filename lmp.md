@@ -1,12 +1,27 @@
-# Introduction
+# Making Sense of Material and Data Flow
 
-A logical map makes sense of related concepts by limiting the visualization to necessary functional elements.  Triple System Analysis ( \tsa) and Adaptive Analysis ( \trs) explain how to use multi-level maps to understand systems [@h_triple_2023] [@h_adaptive_2024].  This how-to guide (\ada)  builds on those ideas, but limits the flow model to materials and data.  Data might live on paper, a computer hard disk, as memories of childhood, or shared cultural forms in our dreams [@samson_evidence_2023].  Data flows in our daily lives as we run reports, write in our diary, account for money, message our friends, maintain contacts, and many other things that rely on other services to process and store our data.  Those services rely on others.  Restaurants often require data flow to accept customers, as orders  and payment are handled by external services.  When there is a network interruption, business grinds to a halt.  Supply chains of production and distribution of materials like eggs, steel, mobile phones or lettuce can also cause significant disruption when interrupted.  Creating a map of these flows prior to failure can help recovery.  Often it is cost-prohibitive to map all possible flows prior to failure; however, the methods describe by this paper our intended to be quick enough to use at time of failure.  Data flow maps were introduced in the 1970s to analyze complicated data processing, and were proven to be an effective cognitive aid  [@gane_structured_1977].   [@Fig:top] is an example map that uses adopts the symbols and conventions
+Civilization is moving fast.  Our progress is causing damage to ourselves and the biosphere [@greenspoon_global_2023]. The explosive growth of data involved in modern experience, coupled with the extremely complex global supply chain of materials and energy, means that participating in design, operations and governance is overwhelming and unlikely for most.  We feel like we are participating. We ask questions about when we will arrive. We make demands of the driver for comfort, entertainment, bathroom breaks and reassurance.  We add sensors and artificial intelligence to the car as it continues on its destructive path. We have so much invested, and are moving so fast, that we are stuck as passengers.  Rather than an identifiable driver, we ask the ***car*** where to go and what to do.  The automobile companies tell us we don't need maps.  We just need to subscribe to a car service, and it will provide answers about the journey. Our free journey app is a frictionless experience as we accelerate on our destructive journey.  As we mature, we begin to question the whole idea of progress, the reason for our journey [@project_development_2024].  
 
 ![Top](images/Top.svg){#fig:top s=.63 a=r}
 
+The most effective way to change complex systems is through ideology and culture, rather than tweak and primp the car and sensors [@meadows_leverage_1999].  Culture cradles us, and provides more direction than our real-time cognition [@tomasello_understanding_2005] [@zheng_unbearable_2025].  It is unlikely we can change while the car is moving.  Luckily for us, business-as-usual is not sustainable.  There will be pauses in motion as parts of our complex system collapses, emerges, and collapses again with varying cadence.  During the pauses between collapse and emergence, we will have opportunities to change. A map can help us make sense of the journey, and establish where we are, where we want to go, and how to get there.   Triple System Analysis (\tsa) and Adaptive Analysis (\trs) explain how to use multi-level maps to understand systems [@h_triple_2023] [@h_adaptive_2024].  This how-to guide (\ada) builds on those ideas, but constrains  the map to  necessary functional elements of material and data flow like [@Fig:top].  
+
+## Scope of This Paper
+
+I don't pretend that maps will solve our problems, or detail what culture and ideology will be needed to refactor and change our systems.  Others have explored these issues in the context of our immediate crises [@hagens_great_2022] [@tedx_talks_end_2023] [@oguzcan_connections_2021] [@john_vervaeke_psychological_2023] [@noauthor_huxley_1958].  I do have professional experience creating logical data flow maps as part of system analysis  [@h_about_2023].  I have leveraged that experience and focused on extending to material and data flow in a simple way, and will limit the rest of that paper to that scope.
+
+## Data
+
+Data might live on index cards at a library, a computer hard disk, as memories of childhood, or shared cultural forms in our dreams [@samson_evidence_2023].  Data flows in our daily lives as we run reports, write in our diary, account for money, message our friends, maintain contacts, and many other things that rely on other services to process and store our data.  Those services rely on others.  Restaurants often require data flow to accept customers, as orders  and payment are handled by external services.  When there is a network interruption, business grinds to a halt.  Data flow maps were introduced in the 1970s to analyze complicated data processing, and were proven to be an effective cognitive aid  [@gane_structured_1977].  
+
+## Materials, Services and Energy
+
+Supply chains of production and distribution of materials like eggs, steel, mobile phones or lettuce can also cause significant disruption when interrupted.    Energy is routed much like materials, and in many cases is directly related to materials [@levi_mapping_2018].
+
+## Map Key
+
 The rounded rectangle blue nodes are transformations.  The teal rectangle nodes are agents that are the sources or sinks of data or intelligence.  The reddish-brown nodes store data or materials at rest.  Dotted lines within the node represent data.  Solid lines represent materials.  As I explained in \trs, data flow diagrams are behind agents that operate transforms.  This is why I think it is OK to mix the nodes, as most of the function is behind the screens, the black box of the device or report that assists the transform. Magenta dots in the corner of a transform/process node mean the node can be expanded by clicking.  An orange dot means that notes and narrative will show with a pointer hover.  A blue dot in the lower right corner of a material transform means there is a connection to the associated full data flow.
 
-\clearpage
 
 # Map Presentations
 ## Simple Web
@@ -71,7 +86,7 @@ yarn install
 yarn dev
 ```
 To update later, change to the local repository and run:
-```{#lst:yari .text .numberLines}
+```{#lst:yari_update .text .numberLines}
 git pull origin main
 yarn
 yarn dev

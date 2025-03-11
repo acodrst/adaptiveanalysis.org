@@ -5302,7 +5302,7 @@ site.pdf = Array.from(Deno.readFileSync("assets/lmp.pdf"));
 site.viewer = Deno.readTextFileSync("assets/pdf_page.html");
 site.page = Deno.readTextFileSync("assets/page.html");
 site.html = Deno.readTextFileSync("assets/lmp_head.html").match(
-  /<header id="title-block-header">.+?<h1 id="introduction">/s,
+  /<header id="title-block-header">.+?<h1 id="making-sense-of-material-and-data-flow">/s,
 )[0].slice(32, -22) +
   Deno.readTextFileSync("assets/lmp.html");
 

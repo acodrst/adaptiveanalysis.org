@@ -45,8 +45,8 @@ header-includes:
   \titleformat*{\section}{\centering\large\bfseries}
   \titleformat*{\subsection}{\normalsize\bfseries}
   \titleformat*{\subsubsection}{\normalsize\bfseries}
-  \titlespacing*{\section}{-18pt}{8pt}{6pt}[0pt]
-  \titlespacing*{\subsection}{-8pt}{1pt}{1pt}[0pt]
+  \titlespacing*{\section}{0pt}{8pt}{6pt}[0pt]
+  \titlespacing*{\subsection}{-14pt}{1pt}{1pt}[0pt]
   \titlespacing*{\subsubsection}{0pt}{8pt}{1pt}[0pt]
   \posttitle{\par\end{center}\vspace{-70pt}}
   \directlua{luaotfload.add_fallback
