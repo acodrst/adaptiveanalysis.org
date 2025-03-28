@@ -13,7 +13,7 @@ let p_c = [
   "--highlight-style=tango",
   "--pdf-engine=lualatex",
   "--pdf-engine-opt=-shell-escape",
-  "--embed-resources=true",
+  "--embed-resources",
   "--filter",
   "pandoc-crossref",
   "--filter",
@@ -30,7 +30,6 @@ new Deno.Command("pandoc", {
 }).outputSync();
 p_c = [
   "--highlight-style=tango",
-  "--embed-resources=false",
   "--filter",
   "pandoc-crossref",
   "--filter",
@@ -51,7 +50,6 @@ new Deno.Command("pandoc", {
 }).outputSync();
 p_c = [
   "--highlight-style=tango",
-  "--embed-resources=false",
   "--filter",
   "pandoc-crossref",
   "--filter",
@@ -70,7 +68,6 @@ new Deno.Command("pandoc", {
   args: p_c,
 }).outputSync();
 
-site.model =Deno.readTextFileSync('./node_modules/text-model-dot/example.txt')
 site.pdf = Array.from(Deno.readFileSync("assets/lmp.pdf"));
 site.viewer = Deno.readTextFileSync("assets/pdf_page.html");
 site.page = Deno.readTextFileSync("assets/page.html");

@@ -9,7 +9,6 @@ header-includes:
 
   \usepackage{fancyhdr}
   \usepackage{svg}
-  \setsvg{inkscape={"/opt/inkscape"}}
   \svgsetup{inkscapelatex=false}
   \fancypagestyle{plain}{
     \fancyhf{}
