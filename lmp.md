@@ -14,13 +14,17 @@ I don't pretend that maps will solve our problems, or detail what culture and id
 
 Data might live on index cards at a library, a computer hard disk, as memories of childhood, or shared cultural forms in our dreams [@samson_evidence_2023].  Data flows in our daily lives as we run reports, write in our diary, account for money, message our friends, maintain contacts, and many other things that rely on other services to process and store our data.  Those services rely on others.  Restaurants often require data flow to accept customers, as orders  and payment are handled by external services.  When there is a network interruption, business grinds to a halt.  Data flow maps were introduced in the 1970s to analyze complicated data processing, and were proven to be an effective cognitive aid  [@gane_structured_1977].  
 
-## Materials, Services and Energy
+## Materials
 
-Supply chains of production and distribution of materials like eggs, steel, mobile phones or lettuce can also cause significant disruption when interrupted.    Energy is routed much like materials, and in many cases is directly related to materials [@levi_mapping_2018].
+Supply chains of production and distribution of materials like eggs, steel, mobile phones or lettuce can cause significant disruption when interrupted.    Energy is routed much like materials, and in many cases is directly related to materials [@levi_mapping_2018].  
 
-## Map Key
+Services can be mapped like materials.  A doctor agent might provide operational intelligence to transform materials like vaccines, and transform experience and memories into care at a clinic location.
 
-The rounded rectangle blue nodes are transformations.  The teal rectangle nodes are agents that are the sources or sinks of data or intelligence.  The reddish-brown nodes store data or materials at rest.  Dotted lines within the node represent data.  Solid lines represent materials.  As I explained in \trs, data flow diagrams are behind agents that operate transforms.  This is why I think it is OK to mix the nodes, as most of the function is behind the screens, the black box of the device or report that assists the transform. Magenta dots in the corner of a transform/process node mean the node can be expanded by clicking.  An orange dot means that notes and narrative will show with a pointer hover.  A blue dot in the lower right corner of a material transform means there is a connection to the associated full data flow.
+## Map Symbols
+
+![Key](images/key.svg){#fig:key s=1.2 a=r}
+
+The rounded rectangle blue nodes shown in [@Fig:key] are transformations.  The teal rectangle nodes are agents that are the sources or sinks of data or intelligence.  The reddish-brown nodes store data or materials at rest.  Dotted lines within the node designate data.  Solid lines designate materials.  As I explained in \trs, data flow diagrams are behind agents that operate transforms.  This is why I think it is OK to mix the nodes, as most of the function is behind the screens, the black box of the device or report that assists the transform. Magenta dots in the corner of a transform/process node mean the node can be expanded by clicking.  An orange dot means that notes and narrative will show with a pointer hover.  A blue dot in the lower right corner of a material transform means there is a connection to the associated full data flow.
 
 
 # Map Presentations
