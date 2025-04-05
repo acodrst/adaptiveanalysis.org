@@ -23,6 +23,9 @@ figure {
   align-items:flex-start;
   margin-top:0;
 }
+#loading{
+  display:none;
+}
 #oid_icon{
   width:1.5rem;
   height:1.5rem;
