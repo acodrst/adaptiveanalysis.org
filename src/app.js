@@ -1,8 +1,8 @@
 document.body.insertAdjacentHTML("beforeend", site.page);
 document.getElementById("home").insertAdjacentHTML("beforeend", site.html);
 const iframe = document.createElement("iframe");
-iframe.srcdoc = site.viewer.replace("thisistss", t).replace("thisisadler", a)
-  .replace("thisislength", g).replace("thisistextlength", tl);
+iframe.srcdoc = site.viewer.replace("thisistss",ʬt).replace("thisisadler", ʬa)
+  .replace("thisislength", ʬg).replace("thisistextlength", ʬl);
 iframe.id = "pdf_frame";
 document.getElementById("pdf").appendChild(iframe);
 const style = document.createElement("style");
