@@ -14,11 +14,11 @@
   "devDependencies": {
     "@rollup/plugin-commonjs": "^28.0.1",
     "@rollup/plugin-node-resolve": "^15.3.0",
-    "pdfjs-dist": "^4.9.155",
+    "fpng-sign-serve": "^1.0.5",
     "rollup": "^4.24.0",
-    "rollup-license-plugin": "^3.0.0",
-    "fpng-sign-serve": "^1.0.1"
+    "rollup-license-plugin": "^3.0.0"
   },
   "dependencies": {
+    "file-saver": "^2.0.5"
   }
 }

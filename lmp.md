@@ -1,10 +1,10 @@
 # Making Sense of Material and Data Flow
 
-Civilization is moving fast.  Our progress is causing damage to ourselves and the biosphere [@greenspoon_global_2023]. The explosive growth of data involved in modern experience, coupled with the extremely complex global supply chain of materials and energy, means that participating in design, operations and governance is overwhelming and unlikely for most.  We feel like we are participating. We ask questions about when we will arrive. We make demands of the driver for comfort, entertainment, bathroom breaks and reassurance.  We add sensors and artificial intelligence to the car as it continues on its destructive path. We have so much invested, and are moving so fast, that we are stuck as passengers.  Rather than an identifiable driver, we ask the ***car*** where to go and what to do.  The automobile companies tell us we don't need maps.  We just need to subscribe to a car service, and it will provide answers about the journey. Our free journey app is a frictionless experience as we accelerate on our destructive journey.  As we mature, we begin to question the whole idea of progress, the reason for our journey [@project_development_2024].  
+Civilization is moving fast.  Our progress is causing damage to ourselves and the biosphere [@greenspoon_global_2023]. The explosive growth of data involved in modern experience, coupled with the extremely complex global supply chain of materials and energy, means that participating in design, operations and governance is overwhelming and unlikely for most.  We feel like we are participating. We ask questions about when we will arrive. We make demands of the driver for comfort, entertainment, bathroom breaks and reassurance.  We add sensors and artificial intelligence to the car as it continues on its destructive path. We have so much invested, and are moving so fast, that we are stuck as passengers.  Rather than an identifiable driver, we ask the ***car*** where to go and what to do.  The automobile companies tell us we don't need maps.  We just need to subscribe to a car service, and it will provide answers about the journey. Our free journey app is a frictionless experience as we accelerate on our destructive journey.  As we mature, we begin to question the whole idea of progress, the reason for our journey [@project_development_2024]. 
 
 ![Top](images/Top.svg){#fig:top s=.63 a=r}
 
-The most effective way to change complex systems is through ideology and culture, rather than tweak and primp the car and sensors [@meadows_leverage_1999].  Culture cradles us, and provides more direction than our real-time cognition [@tomasello_understanding_2005] [@zheng_unbearable_2025].  It is unlikely we can change while the car is moving.  Luckily for us, business-as-usual is not sustainable.  There will be pauses in motion as parts of our complex system collapses, emerges, and collapses again with varying cadence.  During the pauses between collapse and emergence, we will have opportunities to change. A map can help us make sense of the journey, and establish where we are, where we want to go, and how to get there.   Triple System Analysis (\tsa) and Adaptive Analysis (\trs) explain how to use multi-level maps to understand systems [@h_triple_2023] [@h_adaptive_2024].  This how-to guide (\ada) builds on those ideas, but constrains  the map to  necessary functional elements of material and data flow like [@Fig:top].  
+The most effective way to change complex systems is through ideology and culture, rather than tweak and primp the car and sensors [@meadows_leverage_1999].  Culture cradles us, and provides more direction than our real-time cognition [@tomasello_understanding_2005] [@zheng_unbearable_2025] [@noauthor_10_nodate].  It is unlikely we can change while the car is moving.  Luckily for us, business-as-usual is not sustainable.  There will be pauses in motion as parts of our complex system collapses, emerges, and collapses again with varying cadence.  During the pauses between collapse and emergence, we will have opportunities to change. A map can help us make sense of the journey, and establish where we are, where we want to go, and how to get there.   Triple System Analysis (\tsa) and Adaptive Analysis (\trs) explain how to use multi-level maps to understand systems [@h_triple_2023] [@h_adaptive_2024].  This how-to guide (\ada) builds on those ideas, but constrains  the map to  necessary functional elements of material and data flow like [@Fig:top]. 
 
 ## Scope of This Paper
 
@@ -25,7 +25,6 @@ Services can be mapped like materials.  A doctor agent might provide operational
 ![Key](images/key.svg){#fig:key s=1.2 a=r}
 
 The rounded rectangle blue nodes shown in [@Fig:key] are transformations.  The teal rectangle nodes are agents that are the sources or sinks of data or intelligence.  The reddish-brown nodes store data or materials at rest.  Dotted lines within the node designate data.  Solid lines designate materials.  As I explained in \trs, data flow diagrams are behind agents that operate transforms.  This is why I think it is OK to mix the nodes, as most of the function is behind the screens, the black box of the device or report that assists the transform. Magenta dots in the corner of a transform/process node mean the node can be expanded by clicking.  An orange dot means that notes and narrative will show with a pointer hover.  A blue dot in the lower right corner of a material transform means there is a connection to the associated full data flow.
-
 
 # Map Presentations
 ## Simple Web
@@ -98,7 +97,6 @@ yarn dev
 Going forward, just use ```yarn start```.  Browse to http://localhost:3000 to see a local MDN.  Test by disconnecting from the Internet.
 
 \clearpage
-
 
 # References
 

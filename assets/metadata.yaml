@@ -87,7 +87,7 @@ monofontoptions: Scale=0.64
 codeBlockCaptions: true
 linkcolor: blue
 abstract: \noindent \normalsize As we face quickly changing systems, knowing how to create a logical map is critical.  There are many existing tools that help with this. I distill down to the quickest and most effective methods, combining material and data flow with just three symbol classes and two types.\vspace{-211pt} \color{red} \small <p style="color:red;"><b> This document is incomplete. I will work on it over time and remove this notice when finished.\vspace{180pt} \thispagestyle{empty} </b> 
-bibliography: assets/My Library.bib
+bibliography: /home/divine/websites/site/ada/assets/My Library.bib
 geometry:
 - top=.5in
 - bottom=.5in
