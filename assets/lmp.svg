@@ -1,0 +1,7 @@
+<svg class="lmp_icon"  version="1.1" viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <g stroke-width="4.1">
+  <path d="m20 32h-17.6v-15h17.6z" fill="none" stroke="#c31"/>
+  <path d="m32 25v-15h-18v15z" fill="none" stroke="#098"/>
+  <path d="m19 2.3h-9.9c-2 0-3.9 2.7-3.9 5.3v5.3c0 2.7 2 5.3 3.9 5.3h9.9c2 0 3.9-2.7 3.9-5.3v-5.3c0-2.7-2-5.3-3.9-5.3" fill="none" stroke="#3be" stroke-width="4.1"/>
+ </g>
+</svg>
